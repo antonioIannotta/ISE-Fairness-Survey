@@ -19,20 +19,17 @@
 \maketitle
 
 \begin{abstract}
-    The widespread integration of intelligent systems based on artificial intelligence (AI) and machine learning (ML) in sectors such as healthcare, finance, and justice has raised concerns about fairness and discrimination. This Systematic Literature Review (SLR) aims to examine existing research on "fairness" in intelligent systems, with a focus on challenges, proposed solutions, and tools used to address bias in AI/ML-based systems.
-    The SLR reviews a wide range of scientific publications, including articles, empirical studies, and guidelines, to provide a comprehensive overview of the current state of research. Commonly used approaches and metrics for measuring and mitigating bias in data and algorithms are examined. Additionally, ethical and social challenges associated with the implementation of fair intelligent systems are analyzed, along with key recommendations.
-    This work contributes to the understanding of fairness challenges in intelligent systems and serves as a reference for future research and development in this crucial field to ensure fairer and more inclusive systems. \\
-    \textbf{Keywords:} fairness, intelligent systems, artificial intelligence, machine learning, discrimination, bias.
+    Ethical, fairness, and responsible AI have emerged as pivotal concerns in the design and construction of artificial intelligence systems. This systematic literature review aims to comprehensively analyze the evolving landscape of ethical and responsible AI practices and principles within the domain of AI system development. Over the past decade, the rapid proliferation of AI technologies has underscored the critical need for ethical considerations that extend beyond mere compliance. \\
+    The review investigates the frameworks, methodologies, and best practices that advocate for embedding ethical, fairness, and responsible AI principles into the very fabric of AI systems during their design and construction. By examining a wide array of scholarly contributions, this review seeks to elucidate the key ethical challenges faced by AI developers, the strategies employed to integrate fairness and ethical considerations, and the emergent best practices for cultivating responsible AI. \\
+    Furthermore, it will explore the impact of ethical and responsible AI design on society, policy, and the broader AI landscape. The findings from this review will provide valuable insights for AI practitioners, researchers, and policymakers, highlighting the importance of ethical and responsible AI as an inherent part of the AI design process.
 \end{abstract}
 \newpage
 \section{Introduction}
-The widespread integration of artificial intelligence (AI) systems across critical domains, including healthcare, finance, and justice, has introduced new opportunities while raising critical questions about fairness and discrimination. In the real world, AI systems may inherit biases and discrimination from the training data, jeopardizing fairness and objectivity in decision-making. The quest for solutions to mitigate bias in AI systems and ensure fairness has become a paramount concern. \\
-This Systematic Literature Review (SLR) aims to comprehensively examine the evolution of approaches designed to ensure fairness in AI systems over the past decade. The issue of fairness has emerged as a central theme in the discourse on AI responsibility and ethics, as it directly influences the societal impact of these systems. \\
-Fairness is a fundamental concept in ensuring that AI systems are just and equitable. Discrimination and bias can lead to unjust decisions with significant consequences for those affected. Addressing these issues is imperative to ensure that technological advancements in AI are inclusive and uphold fundamental rights. \\
-In this SLR, we seek to address the following research question: How have approaches to ensuring fairness in AI systems evolved over the years? We will examine research progress, newly developed methodologies, and outstanding challenges in this rapidly evolving field. \\
-This study focuses on the past decade, aiming to capture the most recent developments and emerging trends concerning fairness in AI systems. \\
-This SLR assumes critical importance as it provides an up-to-date and in-depth analysis of the methodologies and approaches used to ensure fairness in AI systems. Such an analysis is pivotal for understanding how AI can be developed responsibly and in alignment with ethical principles.
-
+Artificial Intelligence (AI) has witnessed remarkable advancements and an unprecedented integration into various aspects of our lives over the past decade. As AI systems become more pervasive, the ethical, fairness, and responsible design of these systems has become an increasingly critical concern. The development of AI is no longer solely about technological innovation and performance optimization but also encompasses a profound sense of social responsibility and ethical awareness. \\
+This Systematic Literature Review (SLR) delves into the multifaceted realm of Ethical, Fairness, and Responsible AI by design/construction. The rapid evolution of AI technologies has brought about a shift in the AI paradigm, emphasizing the need for ethical and responsible AI from the outset, during the design and construction phases. It is no longer sufficient to address ethical and fairness considerations as an afterthought or as a post-hoc addition; instead, these principles must be deeply ingrained in the very core of AI systems. \\
+The scope of this SLR is to provide a comprehensive analysis of the existing literature, frameworks, methodologies, and best practices surrounding the integration of ethical and responsible AI principles during the design and construction of AI systems. It explores the challenges faced by AI developers, the strategies employed to incorporate fairness and ethics, and the emergent best practices that advocate for responsible AI development. \\
+Moreover, the impact of ethical and responsible AI design on society, policy, and the broader AI landscape is a key aspect of this review. As AI systems exert profound influence on various domains, including healthcare, finance, education, and beyond, the ethical and responsible use of AI becomes pivotal for ensuring equitable access and decision-making. \\
+Through the synthesis of a diverse body of scholarly contributions, this SLR aspires to elucidate the evolving landscape of Ethical, Fairness, and Responsible AI by design/construction. By synthesizing the knowledge and insights derived from existing research, this review intends to provide valuable guidance to AI practitioners, researchers, and policymakers. The ultimate goal is to underscore the significance of ethical and responsible AI as an integral part of the AI design process, furthering our collective efforts in creating AI systems that prioritize societal well-being and fairness.
 \newpage
 \section{Methodology}
     \subsection{Search Strategy}
@@ -44,14 +41,11 @@ This SLR assumes critical importance as it provides an up-to-date and in-depth a
 
 \textbf{Search Strings:}
 \begin{enumerate}
-    \item "Approaches for mitigating bias in artificial intelligence systems"
-    \item "Methods for ensuring fairness in AI systems"
-    \item "Techniques to reduce bias in machine learning"
-    \item "AI system bias mitigation methodologies"
-    \item "Fairness and bias in artificial intelligence"
-    \item "Ethical AI and bias reduction"
-    \item "AI system fairness over the last 10 years"
-    \item "Bias mitigation strategies in AI"
+    \item "AI by design"
+    \item "Fair-by-design algorithm"
+    \item "Responsible AI by design"
+    \item "Fair AI by construction"
+    \item "Ethical AI by design"
 \end{enumerate}
 
 \textbf{Inclusion and Exclusion Criteria:}
@@ -68,14 +62,14 @@ This search strategy is designed to retrieve relevant articles published in the 
     In this section, we describe the process of study selection, which involved the identification and screening of relevant articles. The goal was to select articles that addressed bias mitigation approaches in the context of specific applications.
 
     \begin{enumerate}
-        \item \textbf{Total Number of Identified Articles:} 25
-        \item \textbf{Number of Articles Excluded after Initial Screening:} 10
+        \item \textbf{Total Number of Identified Articles:} 10
+        \item \textbf{Number of Articles Excluded after Initial Screening:} 7
         
-        During the initial screening, 10 articles were excluded due to their strong dependency on the specific application context in which the proposed approaches were intended to be applied.
+        During the initial screening, 3 articles were excluded due to their strong dependency on the specific application context in which the proposed approaches were intended to be applied.
         
-        \item \textbf{Number of Articles Excluded after Secondary Screening:} 0
+        \item \textbf{Number of Articles Excluded after Secondary Screening:} 1
         
-        In the secondary screening, no articles were excluded. The screening process aimed to identify articles sharing the same methodological approach.
+        In the secondary screening, 1 article was excluded due to its deep specificity in a security-by-Design approach.
         
         \item \textbf{Screening Procedures:}
         
@@ -94,177 +88,237 @@ This search strategy is designed to retrieve relevant articles published in the 
     The study selection process ensured that the articles included in the review were relevant to the context of bias mitigation in specific applications, while those heavily dependent on context were excluded.
     \subsection{Data Extraction}
     \begin{itemize}
-        \item \textbf{THE VARIATIONAL FAIR AUTOENCODER}
+        \item \textbf{Responsible AI by Design in Practice}
         \begin{itemize}
-            \item Title: \textbf{The variational fair autoencoder}
+            \item Title: \textbf{Responsible AI by Design in Practice}
             \item Authors: 
             \begin{itemize}
-                \item Christos Louizos
-                \item Kevin Swersky
-                \item Yujia Li
-                \item Max Welling
-                \item Richard Zemel
+                \item Richard Benjamins
+                \item Alberto Barbado
+                \item Daniel Sierra
             \end{itemize}
-            \item Year of Publication: 2017
+            \item Year of Publication: 2019
             \item Abstract:
             \begin{abstract}
-                We investigate the problem of learning representations that are invariant to cer-
-                tain nuisance or sensitive factors of variation in the data while retaining as much
-                of the remaining information as possible. Our model is based on a variational
-                autoencoding architecture (Kingma \& Welling, 2014; Rezende et al., 2014) with
-                priors that encourage independence between sensitive and latent factors of varia-
-                tion. Any subsequent processing, such as classification, can then be performed on
-                this purged latent representation. To remove any remaining dependencies we in-
-                corporate an additional penalty term based on the “Maximum Mean Discrepancy”
-                (MMD) (Gretton et al., 2006) measure. We discuss how these architectures can
-                be efficiently trained on data and show in experiments that this method is more
-                effective than previous work in removing unwanted sources of variation while
-                maintaining informative latent representations.
+                Recently, a lot of attention has been given to undesired con-
+                sequences of Artificial Intelligence (AI), such as unfair bias 
+                leading to discrimination, or the lack of explanations of the 
+                results of AI systems. There are several important questions 
+                to  answer  before  AI  can  be  deployed  at  scale  in  our  busi-
+                nesses  and  societies.  Most  of  these  issues  are  being  dis-
+                cussed  by  experts  and the  wider communities,  and  it  seems 
+                there is broad consensus on where they come from. There is, 
+                however,  less  consensus  on,  and  experience  with  how  to 
+                practically  deal  with  those  issues  in  organizations  that  de-
+                velop  and  use  AI,  both  from  a  technical  and  organizational 
+                perspective. In this paper, we discuss the practical case of a 
+                large  organization  that  is  putting  in  place  a  company-wide 
+                methodology to minimize the risk of undesired consequenc-
+                es  of  AI.  We  hope  that  other  organizations  can  learn  from 
+                this  and  that  our  experience  contributes  to  making  the  best 
+                of AI while minimizing its risks.
             \end{abstract}
         \end{itemize}
         
-        \item \textbf{Algorithmic decision making and the cost of fairness}
+        \item \textbf{A Multidisciplinary Survey and Framework for Design and
+        Evaluation of Explainable AI Systems}
         \begin{itemize}
-            \item Title: \textbf{Algorithmic decision making and the cost of fairness}
+            \item Title: \textbf{A Multidisciplinary Survey and Framework for Design and
+            Evaluation of Explainable AI Systems}
             \item Authors:
             \begin{itemize}
-                \item Sam Corbett-Davies
-                \item Emma Pierson
-                \item Avi Feller
-                \item Sharad Goel
-                \item Aziz Huq
+                \item SINA MOHSENI
+                \item NILOOFAR ZAREI
+                \item ERIC D. RAGAN
             \end{itemize}
-            \item Year of Publication: 2017
+            \item Year of Publication: 2021
             \item Abstract:
             \begin{abstract}
-                Algorithms are now regularly used to decide whether defendants
-                awaiting trial are too dangerous to be released back into the com-
-                munity. In some cases, black defendants are substantially more
-                likely than white defendants to be incorrectly classified as high
-                risk. To mitigate such disparities, several techniques have recently
-                been proposed to achieve algorithmic fairness. Here we reformulate
-                algorithmic fairness as constrained optimization: the objective is to
-                maximize public safety while satisfying formal fairness constraints
-                designed to reduce racial disparities. We show that for several past
-                definitions of fairness, the optimal algorithms that result require de- 
-                taining defendants above race-specific risk thresholds. We further
-                show that the optimal unconstrained algorithm requires applying
-                a single, uniform threshold to all defendants. The unconstrained
-                algorithm thus maximizes public safety while also satisfying one
-                important understanding of equality: that all individuals are held
-                to the same standard, irrespective of race. Because the optimal
-                constrained and unconstrained algorithms generally differ, there is
-                tension between improving public safety and satisfying prevailing
-                notions of algorithmic fairness. By examining data from Broward
-                County, Florida, we show that this trade-off can be large in prac-
-                tice. We focus on algorithms for pretrial release decisions, but the
-                principles we discuss apply to other domains, and also to human
-                decision makers carrying out structured decision rules.
+                The need for interpretable and accountable intelligent systems grows along with the prevalence of artificial
+                intelligence (AI) applications used in everyday life. Explainable AI (XAI) systems are intended to self-
+                explain the reasoning behind system decisions and predictions. Researchers from different disciplines work
+                together to define, design, and evaluate explainable systems. However, scholars from different disciplines
+                focus on different objectives and fairly independent topics of XAI research, which poses challenges for iden-
+                tifying appropriate design and evaluation methodology and consolidating knowledge across efforts. To this
+                end, this article presents a survey and framework intended to share knowledge and experiences of XAI design
+                and evaluation methods across multiple disciplines. Aiming to support diverse design goals and evaluation
+                methods in XAI research, after a thorough review of XAI related papers in the fields of machine learning, vi-
+                sualization, and human-computer interaction, we present a categorization of XAI design goals and evaluation
+                methods. Our categorization presents the mapping between design goals for different XAI user groups and
+                their evaluation methods. From our findings, we develop a framework with step-by-step design guidelines
+                paired with evaluation methods to close the iterative design and evaluation cycles in multidisciplinary XAI
+                teams. Further, we provide summarized ready-to-use tables of evaluation methods and recommendations for
+                different goals in XAI research
             \end{abstract}
         \end{itemize}
         
-        \item \textbf{Avoiding Discrimination through Causal Reasoning}
+        \item \textbf{Bridging the Gap Between AI and 
+        Explainability in the GDPR: Towards 
+        Trustworthiness-by-Design in 
+        Automated Decision-Making}
         \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
+            \item Title: \textbf{Bridging the Gap Between AI and 
+            Explainability in the GDPR: Towards 
+            Trustworthiness-by-Design in 
+            Automated Decision-Making}
+            \item Authors:
+            \begin{itemize}
+                \item Ronan Hamon
+                \item Henrik Junklewitz
+                \item Ignacio Sanchez
+                \item Gianclaudio Malgieri
+                \item Paul De Hert
+            \end{itemize}
+            \item Year of Publication: 2022
+            \item Abstract:
+            \begin{abstract}
+                Can satisfactory explanations for complex machine learning models be achieved in high-risk automated decision-making? How can such explanations be integrated into a data protection framework safeguarding a right to explanation? This article explores from an interdisciplinary point of view the connection between existing legal requirements for the explainability of AI systems set out in the General Data Protection Regulation (GDPR) and the current state of the art in the field of explainable AI. It studies the challenges of providing human-legible explanations for current and future AI-based decision-making systems in practice, based on two scenarios of automated decision-making in credit scoring risks and medical diagnosis of COVID-19. These scenarios exemplify the trend towards increasingly complex machine learning algorithms in automated decision-making, both in terms of data and models. Current machine learning techniques, in particular those based on deep learning, are unable to make clear causal links between input data and final decisions. This represents a limitation for providing exact, human-legible reasons behind specific decisions and presents a serious challenge to the provision of satisfactory, fair, and transparent explanations. Therefore, the conclusion is that the quality of explanations might not be considered as an adequate safeguard for automated decision-making processes under the GDPR. Accordingly, additional tools should be considered to complement explanations. These could include algorithmic impact assessments, other forms of algorithmic justifications based on broader AI principles, and new technical developments in trustworthy AI. This suggests that eventually all of these approaches would need to be considered as a whole.
+            \end{abstract}
         \end{itemize}
         
-        \item \textbf{Data Decisions and Theoretical Implications when Adversarially Learning Fair Representations}
+        \item \textbf{“EQUALITY AND PRIVACY BY DESIGN”:         
+        A NEW MODEL OF ARTIFICIAL 
+        INTELLIGENCE DATA TRANSPARENCY VIA 
+        AUDITING, CERTIFICATION, AND SAFE 
+        HARBOR REGIMES}
         \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
+            \item Title: \textbf{“EQUALITY AND PRIVACY BY DESIGN”:         
+            A NEW MODEL OF ARTIFICIAL 
+            INTELLIGENCE DATA TRANSPARENCY VIA 
+            AUDITING, CERTIFICATION, AND SAFE 
+            HARBOR REGIMES}
+            \item Authors:
+            \begin{itemize}
+                \item Shlomit Yanisky-Ravid
+                \item Sean K. Hallisey
+            \end{itemize}
+            \item Year of Publication: 2019
+            \item Abstract:
+            \begin{abstract}
+                Artificial Intelligence and Machine Learning (AI) are often 
+                described as technological breakthroughs that will completely 
+                transform our society and economy.  AI systems have been 
+                implemented everywhere, from medicine, transportation, finance, art, 
+                to  legal  and  social  spheres,  and  even  in  weapons  development.    In  
+                many sectors, AI systems have already started making decisions 
+                previously  made  by  humans.    Promising  as  AI  systems  may  be,  they  
+                also pose urgent challenges to our everyday life.  While much 
+                attention  has  concerned  AI’s  legal  implications,  the  literature  suffers  
+                from  a  lack  of  solutions  that  account  for  both  legal  and  engineering  
+                practices and constraints.  This leaves technology firms without guidelines and increases the risk of societal harm.  It also means that 
+                policymakers and judges operate without a regulatory regime to turn 
+                to  when  addressing  these  novel  and  unpredictable  outcomes.    This  
+                Article  tries  to  fill  the  void  by  focusing  on  data  rather  than  on  the  
+                software and programmers.  It suggests a new model that stems from 
+                a recognition of the significant role that the data plays in the    
+                development and functioning of AI systems. Data is the most important aspect of teaching AI systems to 
+                operate. AI  algorithms  begin  with  a  massive  preexisting  dataset, 
+                which  data  providers  use  to  train  the  system.    But  the  data  that  AI  
+                systems  “swallow”  can  be  illegal,  discriminatory,  altered,  unreliable,  
+                or simply incomplete.  Thus, the more data fed to the AI systems, the 
+                higher  the  likelihood  that  they  could  produce  biased,  discriminatory  
+                decisions and violate privacy rights.  The Article discusses how 
+                discrimination  can  arise,  even  inadvertently,  from  the  operation  of  
+                “trusted” and “objective” AI systems. To  address  this  problem,  this  Article  proposes  a  new  AI  Data 
+                Transparency Model that focuses on disclosure of data rather than, as 
+                some  scholars  argue,  focusing  on  the  initial  software  program  and  
+                programmers.  The Model includes an auditing regime and a 
+                certification  program,  run  either  by  a  governmental  body  or,  in  the  
+                absence of such entity, by private institutions.  This Model will 
+                encourage the industry to take proactive steps to ensure and publicize 
+                that  datasets  are  trustworthy.    The  suggested  Model  includes  a  safe  
+                harbor, which incentivizes firms to implement transparency 
+                recommendations  even  without  massive  regulatory  oversight.    From  
+                an  engineering  point  of  view,  the  Model  recognizes  data  providers  
+                and  big  data  as  the  most  important  components  in  the  process  of  
+                creating, training and operating AI systems.  Even more importantly, 
+                the Model is technologically feasible because data can be easily 
+                absorbed and kept by a technological tool.  Further, this Model is also 
+                practically feasible because it follows already existing legal 
+                frameworks of data transparency, such as the ones being 
+                implemented by the FDA and the SEC. Improving transparency in data systems would result in less 
+                harmful  AI  systems,  better  protect  societal  rights  and  norms,  and  
+                produc e  improved  outcomes  in  this  emerging  field,  especially  for  
+                minority  communities  that  often  lack  resources  or  representation  to  
+                challenge AI systems.  Increased transparency of the data used while 
+                developing,  training  or  operating  AI  systems  would  mitigate  and  
+                reduce these harms.  Additionally, to better identify the risks of faulty 
+                data,  industry  players  must  conduct  critical  evaluations  and  audits  of  
+                the  data  used  to  train  AI  systems;  one  way  to  incentivize  this  is  a  certification system to publicize good-faith efforts to reduce the 
+                possibility  of  discriminatory  outcomes  and  privacy  violations  in  AI  
+                systems.  This Article strives to incentivize the creation of new 
+                standards, which the industry could implement from the genesis of AI 
+                systems  to  mitigate  the  possibility  of  harm,  rather  than  post-hoc 
+                assignments of liability.
+            \end{abstract}
         \end{itemize}
         
-        \item \textbf{Proxy Discrimination in Data-Driven Systems}
+        \item \textbf{Artificial intelligence ethics by design.
+        Evaluating public perception on the
+        importance of ethical design principles
+        of artificial intelligence}
         \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
+            \item Title: \textbf{Artificial intelligence ethics by design.
+            Evaluating public perception on the
+            importance of ethical design principles
+            of artificial intelligence}
+            \item Authors:
+            \begin{itemize}
+                \item Kimon Kieslich
+                \item Birte Keller
+                \item Christopher Starke
+            \end{itemize}
+            \item Year of Publication: 2022
+            \item Abstract:
+            \begin{abstract}
+                Despite the immense societal importance of ethically designing artificial intelligence, little research on the public percep-
+                tions of ethical artificial intelligence principles exists. This becomes even more striking when considering that ethical arti-
+                ficial intelligence development has the aim to be human-centric and of benefit for the whole society. In this study, we
+                investigate how ethical principles (explainability, fairness, security, accountability, accuracy, privacy, and machine auton-
+                omy) are weighted in comparison to each other. This is especially important, since simultaneously considering ethical
+                principles is not only costly, but sometimes even impossible, as developers must make specific trade-off decisions. In
+                this paper, we give first answers on the relative importance of ethical principles given a specific use case—the use of arti-
+                ficial intelligence in tax fraud detection. The results of a large conjoint survey (n =1099) suggest that, by and large,
+                German respondents evaluate the ethical principles as equally important. However, subsequent cluster analysis shows
+                that different preference models for ethically designed systems exist among the German population. These clusters sub-
+                stantially differ not only in the preferred ethical principles but also in the importance levels of the principles themselves.
+                We further describe how these groups are constituted in terms of sociodemographics as well as opinions on artificial
+                intelligence. Societal implications, as well as design challenges, are discussed
+            \end{abstract}
         \end{itemize}
         
-        \item \textbf{A Reductions Approach to Fair Classification}
+        \item \textbf{Towards Transparency by Design for Artificial Intelligence}
         \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
+            \item Title: \textbf{Towards Transparency by Design for Artificial Intelligence}
+            \item Authors:
+            \begin{itemize}
+                \item Heike Felzmann
+                \item Eduard Fosch‑Villaronga
+                \item Christoph Lutz
+                \item Aurelia Tamò‑Larrieux
+            \end{itemize}
+            \item Year of Publication: 2020
             \item Abstract
-        \end{itemize}
-        
-        \item \textbf{Proxy Fairness}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
-        \end{itemize}
-        
-        \item \textbf{BIAS MITIGATION POST-PROCESSING FOR INDIVIDUAL AND GROUP FAIRNESS}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
-        \end{itemize}
-        
-        \item \textbf{One-network Adversarial Fairness}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
-        \end{itemize}
-        
-        \item \textbf{k-NN as an Implementation of Situation Testing for Discrimination Discovery and Prevention}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
-        \end{itemize}
-        
-        \item \textbf{Fairness definitions explained}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
-        \end{itemize}
-        
-        \item \textbf{Equality of Opportunity in Supervised Learning}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
-        \end{itemize}
-        
-        \item \textbf{Recycling Privileged Learning and Distribution Matching for Fairness}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
-        \end{itemize}
-        
-        \item \textbf{Path-Specific Counterfactual Fairness}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
-        \end{itemize}
-        
-        \item \textbf{Fairness Constraints: Mechanisms for Fair Classification}
-        \begin{itemize}
-            \item Title
-            \item Authors
-            \item Year of Publication
-            \item Abstract
+            \begin{abstract}
+                In  this  article,  we  develop  the  concept  of  Transparency  by  Design  that  serves  as  
+                practical guidance in helping promote the beneficial functions of transparency while  
+                mitigating its challenges in automated-decision making (ADM) environments. With 
+                the  rise  of  artificial  intelligence  (AI)  and  the  ability  of  AI  systems  to  make  auto-
+                mated and self-learned decisions, a call for transparency of how such systems reach 
+                decisions  has  echoed  within  academic  and  policy  circles.  The  term  transparency,  
+                however,  relates  to  multiple  concepts,  fulfills  many  functions,  and  holds  different  
+                promises that struggle to be realized in concrete applications. Indeed, the complex-
+                ity  of  transparency  for  ADM  shows  tension  between  transparency  as  a  normative  
+                ideal and its translation to practical application. To address this tension, we first con-
+                duct  a  review  of  transparency,  analyzing  its  challenges  and  limitations  concerning  
+                automated decision-making practices. We then look at the lessons learned from the 
+                development  of  Privacy  by  Design,  as  a  basis  for  developing  the  Transparency  by  
+                Design principles. Finally, we propose a set of nine principles to cover relevant con-
+                textual, technical, informational, and stakeholder-sensitive considerations. Transpar-
+                ency  by  Design  is  a  model  that  helps  organizations  design  transparent  AI  systems,  
+                by integrating these principles in a step-by-step manner and as an ex-ante value, not 
+                as an afterthought.
+            \end{abstract}
         \end{itemize}
     \end{itemize}
 
