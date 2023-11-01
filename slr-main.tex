@@ -236,42 +236,48 @@ This search strategy is designed to retrieve relevant articles published in the 
 In this section will be summarized the results of the analysis of the papers, with the goal to answer to the question sabout the possible approaches to create trustworty-by-Design mechanisms.
 
 \subsection{What are the approaches used to make the AI Responsible by design?}
-The Spanish company Telefonica has identified and incorporated the following principles into their approach to AI:
+Telefonica, a Spanish company, has embraced a comprehensive set of principles to guide their approach to responsible AI. These principles include:
 
 \subsubsection{Fair AI}
-Telefonica aims to ensure that AI applications lead to equitable outcomes and do not result in discriminatory impacts based on factors like race, ethnicity, religion, gender, sexual orientation, disability, or other personal conditions. They emphasize considering the impact of AI algorithms on specific domains beyond just error optimization.
+Telefonica is committed to ensuring that AI applications lead to fair and non-discriminatory results, considering factors like race, ethnicity, religion, gender, sexual orientation, and disability. They emphasize the importance of assessing the impact of AI algorithms on specific domains.
 
 \subsubsection{Transparent and Explainable AI}
-Telefonica emphasizes the importance of explicitly disclosing the types of data, personal and non-personal, used by AI systems and their intended purposes. They advocate for clear communication with users when interacting with AI systems and for providing explanations of decision-making processes.
+Transparency and explainability are critical to Telefonica. They advocate for clear communication about the data used by AI systems and the purposes they serve. Additionally, they stress the need for providing explanations for AI system decisions.
 
 \subsubsection{Human Centric AI}
-Telefonica emphasizes that AI should serve society and generate tangible benefits for people. AI systems should remain under human control and be driven by value-based considerations, without negatively impacting human rights or the UN's Sustainable Development Goals.
+Telefonica's AI systems are designed to benefit society, staying under human control and guided by value-based considerations. They ensure that AI applications do not negatively impact human rights or the UN's Sustainable Development Goals.
 
 \subsubsection{Privacy and Security by Design}
-Telefonica advocates for integrating privacy and security aspects into the lifecycle of AI systems, whether they use personal or anonymous/aggregated data. This principle extends beyond AI and aligns with standard privacy and security practices in organizations.
+Privacy and security are integral to AI system design at Telefonica. These principles align with standard privacy and security practices in organizations, ensuring the protection of personal data.
 
-To implement Responsible AI by design, Telefonica has developed a methodology that includes the following components:
+To implement these principles effectively, Telefonica has developed a robust methodology, which includes:
+\begin{itemize}
+    \item **AI Principles:** Establishing core values and boundaries to guide AI development.
+    \item **Questions and Checkpoints:** A set of questions and checkpoints to ensure that all AI principles are considered during the creation process.
+    \item **Tools:** Technical tools to help answer questions and mitigate any problems identified during the development process.
+    \item **Training:** Both technical and non-technical training to equip the team with the necessary knowledge and skills.
+    \item **Governance Model:** Assigning responsibilities and accountabilities within the organization.
 
-- **AI principles** that establish values and boundaries.
-- A set of questions and checkpoints to ensure that all AI principles have been considered during the creation process.
-- Tools to help answer questions and mitigate identified problems.
-- Technical and non-technical training.
-- A governance model that assigns responsibilities and accountabilities.
+\end{itemize}
 
-Implementing this methodology requires collaboration across various departments, such as Engineering, Security, Legal, Business, IT, Human Resources, and Procurement. Top management's endorsement is also crucial.
+\subsection{Fair AI: Solutions and Challenges}
+In the context of Fair AI, various technical tools and solutions have emerged. These include:
+\begin{itemize}
+    \item **Fairness Flow Tool:** Tools like Facebook's Fairness Flow tool aim to help detect and mitigate bias in AI systems, particularly by identifying bias in data sets related to sensitive information.
+    \item **IBM's Fairness 360 Toolkit:** IBM's toolkit provides a set of functionalities to address bias, including detecting bias in data sets, identifying correlations between different variables, detecting unbalanced outcomes, and mitigating bias effects.
+    \item **Open Source Tools:** Some of these fairness tools are open-source, such as IBM's offering, tools from Pymetrics, and a tool from the University of Chicago.
 
-\subsubsection{Fair AI: Solutions and Challenges}
-In the context of Fair AI, solutions and tools have been developed, including Facebook's Fairness Flow tool, IBM's Fairness 360 toolkit, and Accenture's AI Fairness tool. Some of these tools are open-source, such as IBM's tool, Pymetrics' tool, and a tool from the University of Chicago. These tools focus on helping detect and avoid undesired discrimination through bias, with functionalities like detecting bias in data sets related to sensitive data, detecting correlations between normal and sensitive variables, and mitigating bias effects.
+\end{itemize}
 
-The document highlights various causes of bias in machine learning models, such as skewed data, tainted data, limited features, sample size disparities, and proxy features. It also discusses different fairness criteria, including independence, separation, and sufficiency, and the challenges of achieving them simultaneously.
+However, achieving Fair AI comes with its set of challenges, including the causes of bias, various fairness criteria, and the need for evaluation and mitigation techniques.
 
-\subsubsection{Transparent and Explainable AI (xAI)}
-In terms of Transparent and Explainable AI, the document discusses the need for explainable AI (xAI), especially for complex "black box" models. It distinguishes between white box models, such as decision trees, and black box models, such as deep learning models, which struggle to provide comprehensive explanations. Various techniques and libraries for xAI are introduced, emphasizing the tradeoff between model complexity and explainability.
+\subsection{Transparent and Explainable AI (xAI)}
+Transparent and Explainable AI is essential, especially when dealing with complex "black box" models. Several technical tools and techniques facilitate explainability, including white box models, black box models, model-agnostic methods, and tools for explaining model workings.
 
-\subsubsection{Privacy and Security by Design}
-Privacy and Security by Design is another important principle, and the document mentions a tool for assessing the risk of re-identification in anonymized datasets. Security against attacks, like adversarial examples, is also crucial, particularly in AI systems used in applications like autonomous vehicles. Tools to test and secure models against such attacks are discussed.
+\subsection{Privacy and Security by Design}
+In the context of Privacy and Security by Design, Telefonica addresses privacy risks and security threats. Technical tools are employed to test the risk of re-identification in anonymized datasets and to secure AI systems against potential attacks.
 
-
+Telefonica's commitment to responsible AI extends to addressing privacy and security concerns, making sure that AI systems are both privacy-respectful and robust against potential attacks.
 
 
 
