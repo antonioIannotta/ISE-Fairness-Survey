@@ -190,7 +190,7 @@ This search strategy is designed to retrieve relevant articles published in the 
                 \item Aurelia Tamò‑Larrieux
             \end{itemize}
             \item Year of Publication: 2020
-            \item Abstract
+            \item Abstract:
             \begin{abstract}
                 In  this  article,  we  develop  the  concept  of  Transparency  by  Design  that  serves  as  
                 practical guidance in helping promote the beneficial functions of transparency while  
@@ -212,14 +212,67 @@ This search strategy is designed to retrieve relevant articles published in the 
                 as an afterthought.
             \end{abstract}
         \end{itemize}
+        
+        \item \textbf{Fairness in Design: A Framework for Facilitating Ethical Artificial Intelligence Designs}
+        \begin{itemize}
+            \item Title: \textbf{Fairness in Design: A Framework for Facilitating Ethical Artificial Intelligence Designs}
+            \item Authors:
+            \begin{itemize}
+                \item Jiehuang Zhang
+                \item Ying Shu
+                \item Han Yu
+            \end{itemize}
+            \item Year of Publication: 2020
+            \item Abstract:
+            \begin{abstract}
+                As Artificial Intelligence (AI) and Digital Transformation (DT) technologies become increasingly ubiquitous in modern society, the flaws in their designs are starting to attract attention. AI models have been shown to be susceptible to biases in the training data, especially against underrepresented groups. Although an increasing call for AI solution designers to take fairness into account, the field lacks a design methodology to help AI design teams of members from different backgrounds brainstorm and surface potential fairness issues during the design stage. To address this problem, we propose the Fairness in Design (FID) framework to help AI software designers surface and explore complex fairness-related issues, that otherwise can be overlooked. We explore literature in the field of fairness in AI to narrow down the field into ten major fairness principles, which assist designers in brainstorming around metrics and guide thinking processes about fairness. FID facilitates discussions among design team members, through a game-like approach that is based on a set of prompt cards, to identify and discuss potential concerns from the perspective of various stakeholders. Extensive user studies show that FID is effective at assisting participants in making better decisions about fairness, especially complex issues that involve algorithmic decisions. It has also been found to decrease the barrier of entry for software teams, in terms of the pre-requisite knowledge about fairness, to address fairness issues so that they can make more appropriate related design decisions. The FID methodological framework contributes a novel toolkit to aid in the design and conception process of AI systems, decrease barriers to entry, and assist critical thinking around complex issues surrounding algorithmic systems. The framework is integrated into a step-by-step card game for AI system designers to employ during the design and conception stage of the life-cycle process. FID is a unique decision support framework for software teams interested to create fairness-aware AI solutions.
+            \end{abstract}
+        \end{itemize}
     \end{itemize}
     
 
 \newpage
 \section{Results}
-In this section will be summarized the results of the analysis of the papers, with the goal to answer to the question about the possible approaches to create fair-by-Design mechanisms.
+In this section will be summarized the results of the analysis of the papers, with the goal to answer to the question sabout the possible approaches to create trustworty-by-Design mechanisms.
 
-\subsection{What are the approaches used to make the AI trustworthy by design?}
+\subsection{What are the approaches used to make the AI Responsible by design?}
+The Spanish company Telefonica has identified and incorporated the following principles into their approach to AI:
+
+\subsubsection{Fair AI}
+Telefonica aims to ensure that AI applications lead to equitable outcomes and do not result in discriminatory impacts based on factors like race, ethnicity, religion, gender, sexual orientation, disability, or other personal conditions. They emphasize considering the impact of AI algorithms on specific domains beyond just error optimization.
+
+\subsubsection{Transparent and Explainable AI}
+Telefonica emphasizes the importance of explicitly disclosing the types of data, personal and non-personal, used by AI systems and their intended purposes. They advocate for clear communication with users when interacting with AI systems and for providing explanations of decision-making processes.
+
+\subsubsection{Human Centric AI}
+Telefonica emphasizes that AI should serve society and generate tangible benefits for people. AI systems should remain under human control and be driven by value-based considerations, without negatively impacting human rights or the UN's Sustainable Development Goals.
+
+\subsubsection{Privacy and Security by Design}
+Telefonica advocates for integrating privacy and security aspects into the lifecycle of AI systems, whether they use personal or anonymous/aggregated data. This principle extends beyond AI and aligns with standard privacy and security practices in organizations.
+
+To implement Responsible AI by design, Telefonica has developed a methodology that includes the following components:
+
+- **AI principles** that establish values and boundaries.
+- A set of questions and checkpoints to ensure that all AI principles have been considered during the creation process.
+- Tools to help answer questions and mitigate identified problems.
+- Technical and non-technical training.
+- A governance model that assigns responsibilities and accountabilities.
+
+Implementing this methodology requires collaboration across various departments, such as Engineering, Security, Legal, Business, IT, Human Resources, and Procurement. Top management's endorsement is also crucial.
+
+\subsubsection{Fair AI: Solutions and Challenges}
+In the context of Fair AI, solutions and tools have been developed, including Facebook's Fairness Flow tool, IBM's Fairness 360 toolkit, and Accenture's AI Fairness tool. Some of these tools are open-source, such as IBM's tool, Pymetrics' tool, and a tool from the University of Chicago. These tools focus on helping detect and avoid undesired discrimination through bias, with functionalities like detecting bias in data sets related to sensitive data, detecting correlations between normal and sensitive variables, and mitigating bias effects.
+
+The document highlights various causes of bias in machine learning models, such as skewed data, tainted data, limited features, sample size disparities, and proxy features. It also discusses different fairness criteria, including independence, separation, and sufficiency, and the challenges of achieving them simultaneously.
+
+\subsubsection{Transparent and Explainable AI (xAI)}
+In terms of Transparent and Explainable AI, the document discusses the need for explainable AI (xAI), especially for complex "black box" models. It distinguishes between white box models, such as decision trees, and black box models, such as deep learning models, which struggle to provide comprehensive explanations. Various techniques and libraries for xAI are introduced, emphasizing the tradeoff between model complexity and explainability.
+
+\subsubsection{Privacy and Security by Design}
+Privacy and Security by Design is another important principle, and the document mentions a tool for assessing the risk of re-identification in anonymized datasets. Security against attacks, like adversarial examples, is also crucial, particularly in AI systems used in applications like autonomous vehicles. Tools to test and secure models against such attacks are discussed.
+
+
+
 
 
 \newpage
