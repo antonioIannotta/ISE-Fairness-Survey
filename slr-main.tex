@@ -334,6 +334,7 @@ Telefonica's commitment to responsible AI extends to addressing privacy and secu
 
 \newpage
 \subsection{What are the approaches adopted to consider fairness since the beginning of the design step?}
+\subsubsection{Methodological framework for AI solutions development}
 FID is presented as a methodological framework for software development teams working on AI solutions. It is designed to help these teams systematically incorporate fairness considerations into their AI systems. This framework ensures that fairness is a fundamental part of the design process rather than an afterthought.
 
 \begin{itemize}
@@ -357,6 +358,28 @@ FID is presented as a methodological framework for software development teams wo
 \end{itemize}
 
 In summary, Fairness in Design (FID) is a structured and systematic approach to incorporating fairness into AI systems during the design phase. It ensures that ethical considerations are an integral part of AI development, promoting transparency and accountability in the creation of AI technologies.
+
+\subsubsection{Algorithmic approach in recidivism scenario}
+Fair-by-design is a critical approach when implementing predictive algorithms in the criminal justice system or any other domain where decisions significantly impact individuals' lives. This methodology aims to ensure that algorithms used for risk assessment and decision-making are free from discriminatory biases and provide equitable outcomes for all. \\
+In the criminal justice system, predictive algorithms are employed for various purposes, including pre-trial decision-making, predicting crime hotspots, identifying profiles with a high likelihood of committing violent crimes, and forecasting recidivism. However, it's crucial to acknowledge that the accuracy of these algorithms has profound consequences for the individuals involved, especially in the context of criminal defendants. \\
+One example cited is the Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) risk assessment tool. This tool, developed in 1998, has assessed more than 1 million offenders. Research, such as that conducted by ProPublica, has raised concerns about the tool's fairness and equity. For instance, the likelihood of a non-recidivating black defendant being assessed as high risk was found to be nearly twice that of white defendants. This reveals a significant racial disparity in the tool's predictive accuracy, with higher false positive rates and lower false negative rates for black defendants compared to white defendants.\\
+To address these issues, a fair-by-design approach is proposed in this paper. The key elements of this approach include:
+
+\begin{itemize}
+  \item \textbf{Prototype-Based Learning}: The core of the method involves creating locally valid generative models based on prototypes, which are focal points for each class. These models are described by a multimodal Cauchy distribution, and the meta-parameters are initialized with the first observed data sample.
+  
+  \item \textbf{Data Density Calculation}: Data density is calculated using a Cauchy function for each data point. This calculation helps in determining the influence area of prototypes in the feature space.
+  
+  \item \textbf{Assignment of Data Samples}: New data samples are assigned to the nearest prototype in the feature space. This assignment creates data clouds around each prototype.
+  
+  \item \textbf{Condition for Adding New Data Clouds}: A condition is checked to determine if a new data cloud should be added. If a data point is out of the influence area of existing prototypes, it becomes a new prototype, and a new data cloud is formed around it.
+  
+  \item \textbf{Interpretability}: The approach's interpretability is highlighted as it operates based on prototype-based, local generative models. It can be expressed as a set of linguistic IF...THEN rules, making it understandable to human users.
+  
+  \item \textbf{Learning Procedure}: The learning algorithm is summarized, detailing how new data samples are processed, prototypes are updated, and new data clouds are formed based on the condition mentioned.
+\end{itemize}
+
+This approach offers a method to create predictive models that are fair by design, ensuring that algorithms used in criminal justice and other domains are free from discrimination and bias. It provides a systematic way to improve predictive accuracy and equity, which is crucial in high-stakes decision-making processes. The next section of the paper likely presents experiments and results using this fair-by-design approach, followed by a conclusion.
 
 \newpage
 \subsection{What are the approaches to guarantee Transparency-by-Design in AI systems?}
@@ -408,6 +431,156 @@ This final phase is concerned with the organizational and societal response to t
 
 By following this comprehensive methodology, AI systems can embed transparency by design into their development and deployment processes. This approach ensures that transparency is not merely a one-time endeavor but an ongoing practice that aligns with the varying needs of different stakeholders and maintains a strong focus on ethical and accountable AI. Transparency by design becomes a means to promote trust, mitigate risks, and enhance AI's societal impact.
 
+\newpage
+\subsection{What are the approaches adopted to guarantee Explainable-by-Design AI?}
+\subsection{Ensamble Algorithm}
+In this approach, it is considered an ensemble algorithm called LCE (Local Cascade Ensemble) and its application in creating an explainable-by-design AI model called XEM (eXplainable-by-design Ensemble Method) for Multivariate Time Series (MTS) classification.
+
+\subsubsection{LCE (Local Cascade Ensemble):}
+
+\begin{itemize}
+    \item LCE is an improved hybrid ensemble method that combines explicit and implicit techniques.
+    \item It builds on a cascade generalization approach and uses a decision tree as the primary method.
+    \item LCE aims to balance bias and variance in the classification process.
+    \item It can capture new relationships within MTS data that cannot be discovered globally.
+\end{itemize}
+
+\subsubsection{XEM (eXplainable-by-design Ensemble Method):}
+
+\begin{itemize}
+    \item XEM leverages LCE to identify the discriminative part of MTS and create an explainable AI model for MTS classification.
+    \item It uses tabular classifiers for the sub-sequences of MTS and combines both performance and explainability.
+    \item XEM allows for the dynamic determination of the time window size based on the classification task.
+    \item It provides explainability by indicating which part of the MTS was decisive in making a particular classification.
+\end{itemize}
+
+\subsubsection{Key Properties:}
+
+\begin{itemize}
+    \item XEM offers phase invariance, meaning it's not sensitive to the position of the discriminative subsequence.
+    \item It leverages interactions among dimensions for improved classification.
+    \item XEM can handle MTS of different lengths and manages missing data effectively.
+    \item The ensemble approach provides noise robustness, and it's scalable.
+\end{itemize}
+
+\subsubsection{Implementation:}
+
+The authors provide a pseudocode for implementing XEM and share their Python implementation.
+
+Overall, LCE and XEM offer a promising approach to MTS classification, combining performance with explainability and addressing various challenges associated with time series data.
+\subsection{Neural Network approach for internet traffic classification}
+\subsubsection{Introduction to LEXNet:}
+
+LEXNet, short for "Lightweight, Efficient, and eXplainable-by-design Convolutional Neural Network for Internet Traffic Classification," represents a groundbreaking convolutional neural network (CNN) meticulously tailored for the realm of internet traffic classification. This innovative model excels in the precise categorization of encrypted internet traffic flows into distinct application classes. It distinguishes itself by being not only accurate but also lightweight, computationally efficient, and exceptionally transparent in its decision-making process.
+
+\subsubsection{Challenges in Traffic Classification:}
+
+LEXNet was conceived to address the inherent limitations of conventional approaches in internet traffic classification. Many established methods lean on cumbersome deep learning models that lack transparency in their decision-making processes. Furthermore, these models often grapple with issues related to scalability and are typically evaluated using proprietary datasets, making it challenging to assess their real-world effectiveness accurately.
+
+\subsubsection{A Solution for Transparent Classification:}
+
+LEXNet offers a solution by offering a fresh perspective. It is introduced as a novel, accurate, and efficient approach that emphasizes explainability-by-design while retaining high performance. Unlike existing methods, LEXNet is assessed on a public, real-world commercial dataset, ensuring that its performance is reflective of practical scenarios.
+
+\subsubsection{Key Components of LEXNet:}
+
+LEXNet integrates several crucial components that work seamlessly to provide transparent and effective traffic classification:
+
+\begin{itemize}
+    \item \textbf{Lightweight and Efficient Residual Block (LERes):} LEXNet features a newly devised residual block that efficiently trims the number of parameters and computational demands. Unlike conventional residual blocks, this innovative design maintains an equal channel width, which significantly reduces memory access costs while preserving the accuracy of ResNet.
+    \item \textbf{Lightweight Prototype Layer (LProto):} Instead of the traditional prototype block found in the ProtoPNet, LEXNet introduces a lightweight prototype layer. This modification streamlines the network by employing fewer convolutional layers with reduced prototype depths. Notably, it permits a variable number of prototypes per class, enhancing the model's ability to represent the diverse characteristics of each class.
+
+\end{itemize}
+
+\subsubsection{Transparent Decision-Making with Explainability-by-Design:}
+
+One of LEXNet's distinguishing features is its commitment to "explainable-by-design" decision-making, ensuring transparency in classification processes. LEXNet accomplishes this through several essential mechanisms:
+
+\begin{itemize}
+    \item \textbf{Prototype-Based Explainability:} LEXNet adopts a prototype-based methodology that leverages class-specific prototypes. These prototypes serve as distinctive patterns or features associated with each class, providing valuable anchors for classification.
+    \item \textbf{Similarity Scores:} During classification, LEXNet calculates similarity scores between the input data and the learned prototypes. These scores indicate the likeness of the input data to each class-specific prototype.
+    \item \textbf{Activation Maps and Heatmaps:} LEXNet generates activation maps, which retain the spatial relationships of the original convolutional output. These maps play a crucial role in preserving contextual information.
+    \item \textbf{Interpretable Heatmaps:} Activation maps are further processed and upsampled to match the size of the input data, resulting in heatmaps. These heatmaps are instrumental for explaining classification decisions and visually highlighting the input data regions that significantly influenced the model's choice.
+    \item \textbf{Visual Explanations:} The heatmaps serve as visual explanations of the model's decisions. Network administrators, analysts, or cybersecurity experts can leverage these visualizations to understand why the model categorized specific traffic flows in particular ways. Examining the heatmap reveals the specific features, regions, or patterns in the input data that contributed most significantly to the classification outcome.
+    \item \textbf{Variable Prototypes per Class:} LEXNet's adaptability allows it to learn varying numbers of prototypes for each class, catering to the unique characteristics and complexities of individual classes.
+\end{itemize}
+
+\subsubsection{In summary} 
+LEXNet fundamentally transforms the landscape of traffic classification. It excels in delivering accuracy, efficiency, and transparency through its "explainable-by-design" approach. Its unique design elements, including the LERes blocks and LProto layer, equip it to overcome the challenges of traffic classification while ensuring that its classification decisions are not only accurate but also comprehensible. This level of transparency is paramount, especially in the domains of network management and cybersecurity, where a profound understanding of why specific traffic flows are categorized as they are holds critical importance for security analysis, performance optimization, and informed decision-making. LEXNet is at the forefront of high-performance classification models that prioritize clarity and transparency.
+
+\newpage
+\subsection{What are the approaches to guarantee Etichs-by-design?}
+The EbD-AI approach to AI ethics emphasizes the belief that technology is not neutral and that design choices can embed values into the process. It recognizes that design choices are not morally neutral and can have ethical consequences. While the consequences of technology can depend on its usage and context, design plays a significant role in shaping outcomes. For instance, an app designed to collect personal information without consent violates privacy regardless of its use. \\
+The approach is rooted in the idea that values can be integrated into the design process, as seen in concepts like Privacy by Design and Secure by Design. It aims to incorporate ethical values in AI system development. While this doesn't guarantee that values will always be realized, it increases the likelihood that they are. \\
+Engineers may not possess the skills for ethical analysis and deliberation, so EbD-AI provides a framework of tasks for them to follow. It moves ethical concerns to the same level as other system concerns and emphasizes routine ethical issues in design. Special ethical issues may require a reflective approach, and the involvement of an ethicist in projects can help identify and address such issues. \\
+EbD-AI focuses on instantiating core moral values necessary for ethical standards in AI design, such as privacy and fairness. The exact meaning of these values can vary by application and organization. EbD-AI translates ethical requirements into specific tasks, functions, constraints, and more. \\
+The approach follows five steps: Assessment to evaluate the system's objectives against foundational moral values, Instantiation to translate moral values into design requirements, Mapping to map high-level ethical design requirements into specific procedures and actions, Application to determine where and how each ethical requirement will be handled in an organization's methodology, and Implementation to implement Ethics by Design protocols during development. \\
+This approach helps ensure that ethical considerations are integrated throughout the development process, recognizing that the specifics of how this is done can vary depending on the organization and application. The EbD-AI approach is intended to facilitate the ethical integration of AI within different methodologies and organizations. \\
+Here are presented the core moral values relevant to AI, forming an "ethical framework" guiding AI system design. These values align with global consensus and include:
+\begin{itemize}
+  \item \textbf{Human Agency:} Embraces freedom, autonomy, and dignity as human rights. Design must respect individuals' right to make their decisions and prevent any restrictions on basic human freedoms.
+  \item \textbf{Privacy and Data Governance:} Affirms privacy rights and the importance of data governance. Design must respect data subjects' rights and demonstrate lawful, fair, and transparent data processing.
+  \item \textbf{Fairness:} Ensures equal rights and opportunities, avoiding discrimination and supporting diversity and inclusion. Design must prevent algorithmic bias and promote accessibility.
+  \item \textbf{Individual, Social, and Environmental Well-being:} AI systems should contribute to individual, societal, and environmental well-being while avoiding harm. Safety, sustainability, and avoiding negative social impacts are essential.
+  \item \textbf{Transparency:} Requires clarity in AI system purpose, operations, and decisions. Users should know they are interacting with AI, understand system capabilities, and have the ability to audit and challenge decisions.
+  \item \textbf{Accountability and Oversight:} Encourages accountability and human oversight, ensuring that AI actors take responsibility for system operation and consequences. Oversight should be maintained post-deployment, allowing for risk assessment and auditing.
+\end{itemize}
+Each of these design requirements further translates into specific procedures and actions during various stages of the design process. These are discussed in the following section. \\
+Ethics by Design introduces a model for the development of AI systems that incorporates ethical considerations throughout the entire process. This model is designed to be adaptable to various development methodologies and encompasses six generic phases, which are not rigidly sequential but are flexible classes of operations that can be mixed, rearranged, and adjusted to suit the development process for an AI system.
+
+\subsubsection{Specification of Objectives}
+In this phase:
+\begin{itemize}
+    \item The top-level purpose and desired capabilities of the system are outlined.
+    \item These objectives are evaluated against six generic moral values and ethical standards, considering their alignment and potential legal mandates.
+    \item Ethical issues that may arise during development, based on specific procedures or tools, are also taken into account.
+    \item The impact of the system on stakeholders is emphasized, making the involvement of external stakeholders a critical ethical requirement from the outset.
+\end{itemize}
+
+\subsubsection{Specification of Requirements}
+During this phase:
+\begin{itemize}
+    \item Both technical and non-technical requirements for the system are determined, including those necessary for ethical compliance.
+    \item The goal is to produce a development plan, including design specifications, task deadlines, and an assessment of the necessary resources.
+    \item New tools and resources that support the Ethics by Design for AI approach may be required, necessitating changes in internal processes.
+    \item An ethical risk assessment and an implementation plan are developed to ensure the incorporation of the Ethics by Design approach.
+\end{itemize}
+
+\subsubsection{High-Level Design}
+In this phase:
+\begin{itemize}
+    \item The high-level architecture of the system is designed, often preceded by the development of a conceptual model.
+    \item Both technical and non-technical requirements, including ethical requirements related to transparency, autonomy, privacy, and fairness, are integrated into the design.
+    \item Ethical requirements are treated as equal to other technical requirements, emphasizing their importance in the design process.
+\end{itemize}
+
+\subsubsection{Data Collection and Preparation}
+During this phase:
+\begin{itemize}
+    \item Data is collected and integrated, a critical step as incomplete or biased datasets can lead to unethical AI systems.
+    \item Measures are taken to address potential biases and ensure data quality.
+    \item Data cleaning and preparation are critical, as these steps can introduce new ethical problems.
+    \item Compliance with data protection regulations like GDPR is essential, especially if the system processes personal data.
+\end{itemize}
+
+\subsubsection{Design and Development}
+In this phase:
+\begin{itemize}
+    \item The actual construction of the system takes place, instantiating ethical requirements through development processes.
+    \item Specific actions to incorporate ethical requirements are integrated with other development tasks.
+    \item Documentation and human oversight of data handling processes are essential for transparency, traceability, and accountability.
+    \item Ethical governance and documentation systems are designed to make ethical issues identifiable and their resolution traceable.
+\end{itemize}
+
+\subsubsection{Testing and Evaluation}
+During this phase:
+\begin{itemize}
+    \item The system's compliance with original objectives, including ethical requirements, is verified.
+    \item An ethical examination is conducted to ensure that the system aligns with its ethical requirements.
+    \item Real-world use is assessed, involving a cross-section of potential stakeholders.
+    \item Stakeholder involvement is crucial, as ethical problems can often involve unequal treatment of certain user groups.
+\end{itemize}
+
+The integration of the Ethics by Design for AI approach into any design methodology involves mapping the tasks from the generic model into the chosen methodology. Ethical requirements relevant to each stage are identified, and checklists of ethical requirements are created for each element of the methodology. The goal is to include ethics as a standard part of the AI development process, ensuring ethical compliance is monitored and enforced throughout the entire development lifecycle. It is also emphasized that cultural adjustments are necessary to instill ethical considerations throughout the development organization.
 
 \newpage
 \section{Conclusion}
