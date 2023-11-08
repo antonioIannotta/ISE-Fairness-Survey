@@ -56,10 +56,10 @@ Through the synthesis of a diverse body of scholarly contributions, this SLR asp
     \item Excluded: Duplicate documents and articles not relevant to the research topic.
 \end{itemize}
 
-This search strategy is designed to retrieve relevant articles published in the last 10 years that address approaches for mitigating bias and ensuring fairness in artificial intelligence systems. Make sure to specify the start and end dates for the publication period. You can use these search strings in the specified databases to identify pertinent sources for your Systematic Literature Review.
+This search strategy is designed to retrieve relevant articles published in the last 10 years that address approaches to guarantee trustworthy AI since the design step.
 
     \subsection{Study Selection}
-    In this section, we describe the process of study selection, which involved the identification and screening of relevant articles. The goal was to select articles that addressed bias mitigation approaches in the context of specific applications.
+    In this section, is described the process of study selection, which involved the identification and screening of relevant articles. The goal was to select articles that addressed bias mitigation approaches in the context of specific applications.
 
     \begin{enumerate}
         \item \textbf{Total Number of Identified Articles:} 10
@@ -287,7 +287,7 @@ This search strategy is designed to retrieve relevant articles published in the 
 In this section will be summarized the results of the analysis of the papers, with the goal to answer to the question sabout the possible approaches to create trustworty-by-Design mechanisms.
 
 \subsection{What are the approaches used to make the AI Responsible by design?}
-Telefonica, a Spanish company, has embraced a comprehensive set of principles to guide their approach to responsible AI. These principles include:
+Telefonica\cite{DBLP:journals/corr/abs-1909-12838}, a Spanish company, has embraced a comprehensive set of principles to guide their approach to responsible AI. These principles include:
 
 \subsubsection{Fair AI}
 Telefonica is committed to ensuring that AI applications lead to fair and non-discriminatory results, considering factors like race, ethnicity, religion, gender, sexual orientation, and disability. They emphasize the importance of assessing the impact of AI algorithms on specific domains.
@@ -333,7 +333,7 @@ Telefonica's commitment to responsible AI extends to addressing privacy and secu
 \newpage
 \subsection{What are the approaches adopted to consider fairness since the beginning of the design step?}
 \subsubsection{Methodological framework for AI solutions development}
-FID is presented as a methodological framework for software development teams working on AI solutions. It is designed to help these teams systematically incorporate fairness considerations into their AI systems. This framework ensures that fairness is a fundamental part of the design process rather than an afterthought.
+FID\cite{10091496} is presented as a methodological framework for software development teams working on AI solutions. It is designed to help these teams systematically incorporate fairness considerations into their AI systems. This framework ensures that fairness is a fundamental part of the design process rather than an afterthought.
 
 \begin{itemize}
     \item \textbf{Fairness Definitions and Notions}: FID consolidates fairness definitions and notions from the existing literature into ten fundamental fairness principles. These principles are categorized into group fairness and individual fairness. Each of these principles represents a specific aspect of fairness in AI, such as statistical parity, equal opportunity, and more.
@@ -358,7 +358,7 @@ FID is presented as a methodological framework for software development teams wo
 In summary, Fairness in Design (FID) is a structured and systematic approach to incorporating fairness into AI systems during the design phase. It ensures that ethical considerations are an integral part of AI development, promoting transparency and accountability in the creation of AI technologies.
 
 \subsubsection{Algorithmic approach in recidivism scenario}
-Fair-by-design is a critical approach when implementing predictive algorithms in the criminal justice system or any other domain where decisions significantly impact individuals' lives. This methodology aims to ensure that algorithms used for risk assessment and decision-making are free from discriminatory biases and provide equitable outcomes for all. \\
+Fair-by-design is a critical approach when implementing predictive algorithms in the criminal justice\cite{Soares2019FairbydesignEM} system or any other domain where decisions significantly impact individuals' lives. This methodology aims to ensure that algorithms used for risk assessment and decision-making are free from discriminatory biases and provide equitable outcomes for all. \\
 In the criminal justice system, predictive algorithms are employed for various purposes, including pre-trial decision-making, predicting crime hotspots, identifying profiles with a high likelihood of committing violent crimes, and forecasting recidivism. However, it's crucial to acknowledge that the accuracy of these algorithms has profound consequences for the individuals involved, especially in the context of criminal defendants. \\
 One example cited is the Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) risk assessment tool. This tool, developed in 1998, has assessed more than 1 million offenders. Research, such as that conducted by ProPublica, has raised concerns about the tool's fairness and equity. For instance, the likelihood of a non-recidivating black defendant being assessed as high risk was found to be nearly twice that of white defendants. This reveals a significant racial disparity in the tool's predictive accuracy, with higher false positive rates and lower false negative rates for black defendants compared to white defendants.\\
 To address these issues, a fair-by-design approach is proposed in this paper. The key elements of this approach include:
@@ -381,9 +381,9 @@ This approach offers a method to create predictive models that are fair by desig
 
 \newpage
 \subsection{What are the approaches to guarantee Transparency-by-Design in AI systems?}
-Transparency is a multifaceted concept with varying interpretations across different disciplines. It encompasses notions of explainability, interpretability, openness, accessibility, and visibility, among others. The concept of transparency is of paramount importance in fields such as economics, politics, and law, where it is considered a prerequisite for optimal market functioning, political participation, and administrative legality, respectively. Despite the consensus that transparency is valuable, its precise definition, its intended audience, and its scope of benefits often remain ambiguous.
+Transparency is a multifaceted concept with varying interpretations across different disciplines.\cite{articletbd} It encompasses notions of explainability, interpretability, openness, accessibility, and visibility, among others. The concept of transparency is of paramount importance in fields such as economics, politics, and law, where it is considered a prerequisite for optimal market functioning, political participation, and administrative legality, respectively. Despite the consensus that transparency is valuable, its precise definition, its intended audience, and its scope of benefits often remain ambiguous.
 
-Our approach to transparency by design is grounded in the belief that understanding transparency purely as an information transfer process falls short of its deeper, value-laden embeddedness within individual agency, relational dynamics, and systemic practices. To this end, we differentiate between three fundamental perspectives on transparency, each highlighting the normative and social aspects of transparency practices: Transparency as a virtue, a relation, and a system.
+The approach to transparency by design is grounded in the belief that understanding transparency purely as an information transfer process falls short of its deeper, value-laden embeddedness within individual agency, relational dynamics, and systemic practices. To this end, it's important to differentiate between three fundamental perspectives on transparency, each highlighting the normative and social aspects of transparency practices: Transparency as a virtue, a relation, and a system.
 
 \subsubsection{Transparency as a Virtue}
 
@@ -431,7 +431,7 @@ By following this comprehensive methodology, AI systems can embed transparency b
 
 \newpage
 \subsection{What are the approaches adopted to guarantee Explainable-by-Design AI?}
-\subsection{Ensamble Algorithm}
+\subsection{Ensamble Algorithm} \cite{DBLP:journals/corr/abs-2005-03645}
 In this approach, it is considered an ensemble algorithm called LCE (Local Cascade Ensemble) and its application in creating an explainable-by-design AI model called XEM (eXplainable-by-design Ensemble Method) for Multivariate Time Series (MTS) classification.
 
 \subsubsection{LCE (Local Cascade Ensemble):}
@@ -466,7 +466,7 @@ In this approach, it is considered an ensemble algorithm called LCE (Local Casca
 The authors provide a pseudocode for implementing XEM and share their Python implementation.
 
 Overall, LCE and XEM offer a promising approach to MTS classification, combining performance with explainability and addressing various challenges associated with time series data.
-\subsection{Neural Network approach for internet traffic classification}
+\subsection{Neural Network approach for internet traffic classification} \cite{10.1145/3580305.3599762}
 \subsubsection{Introduction to LEXNet:}
 
 LEXNet, short for "Lightweight, Efficient, and eXplainable-by-design Convolutional Neural Network for Internet Traffic Classification," represents a groundbreaking convolutional neural network (CNN) meticulously tailored for the realm of internet traffic classification. This innovative model excels in the precise categorization of encrypted internet traffic flows into distinct application classes. It distinguishes itself by being not only accurate but also lightweight, computationally efficient, and exceptionally transparent in its decision-making process.
@@ -507,7 +507,7 @@ LEXNet fundamentally transforms the landscape of traffic classification. It exce
 
 \newpage
 \subsection{What are the approaches to guarantee Etichs-by-design?}
-The EbD-AI approach to AI ethics emphasizes the belief that technology is not neutral and that design choices can embed values into the process. It recognizes that design choices are not morally neutral and can have ethical consequences. While the consequences of technology can depend on its usage and context, design plays a significant role in shaping outcomes. For instance, an app designed to collect personal information without consent violates privacy regardless of its use. \\
+The EbD-AI approach to AI ethics emphasizes the belief that technology \cite{articleebd} is not neutral and that design choices can embed values into the process. It recognizes that design choices are not morally neutral and can have ethical consequences. While the consequences of technology can depend on its usage and context, design plays a significant role in shaping outcomes. For instance, an app designed to collect personal information without consent violates privacy regardless of its use. \\
 The approach is rooted in the idea that values can be integrated into the design process, as seen in concepts like Privacy by Design and Secure by Design. It aims to incorporate ethical values in AI system development. While this doesn't guarantee that values will always be realized, it increases the likelihood that they are. \\
 Engineers may not possess the skills for ethical analysis and deliberation, so EbD-AI provides a framework of tasks for them to follow. It moves ethical concerns to the same level as other system concerns and emphasizes routine ethical issues in design. Special ethical issues may require a reflective approach, and the involvement of an ethicist in projects can help identify and address such issues. \\
 EbD-AI focuses on instantiating core moral values necessary for ethical standards in AI design, such as privacy and fairness. The exact meaning of these values can vary by application and organization. EbD-AI translates ethical requirements into specific tasks, functions, constraints, and more. \\
@@ -582,11 +582,11 @@ The integration of the Ethics by Design for AI approach into any design methodol
 
 \newpage
 \section{Conclusion}
-n this systematic literature review (SLR), we have explored a wide range of approaches aimed at addressing the crucial issue of "trustworthy-by-design" in the field of Artificial Intelligence (AI). Our analysis encompassed various methodologies and tools employed in both the broader context of software development and within the realm of algorithmic and mathematical techniques. \\
-Through our investigation, several key insights and conclusions have emerged:
+n this systematic literature review (SLR), it has explored a wide range of approaches aimed at addressing the crucial issue of "trustworthy-by-design" in the field of Artificial Intelligence (AI). This analysis encompassed various methodologies and tools employed in both the broader context of software development and within the realm of algorithmic and mathematical techniques. \\
+Through this investigation, several key insights and conclusions have emerged:
 
 \begin{enumerate}
-    \item \textbf{Diversity of Approaches:} We observed a notable diversity in the strategies and methodologies used to instill trustworthiness in AI systems. Researchers have explored approaches ranging from traditional software engineering principles to sophisticated algorithmic and mathematical techniques. This diversity highlights the multifaceted nature of the challenge.
+    \item \textbf{Diversity of Approaches:} It has been observed a notable diversity in the strategies and methodologies used to instill trustworthiness in AI systems. Researchers have explored approaches ranging from traditional software engineering principles to sophisticated algorithmic and mathematical techniques. This diversity highlights the multifaceted nature of the challenge.
 
     \item \textbf{Interdisciplinary Collaboration:} The research landscape underscores the importance of interdisciplinary collaboration. Combining insights from software engineering, mathematics, and AI can yield novel solutions to enhance trustworthiness in AI systems. Successful initiatives often involve experts from various fields working together.
 
@@ -604,6 +604,7 @@ In conclusion, the pursuit of trustworthy AI is an ongoing and dynamic field, wh
 
 \newpage
 \section{References}
-    
+\bibliographystyle{plain}
+\bibliography{bibliography}
 
 \end{document}
