@@ -19,85 +19,165 @@
 \maketitle
 
 \begin{abstract}
-    Ethical, fairness, and responsible AI have emerged as pivotal concerns in the design and construction of artificial intelligence systems. This systematic literature review aims to comprehensively analyze the evolving landscape of ethical and responsible AI practices and principles within the domain of AI system development. Over the past decade, the rapid proliferation of AI technologies has underscored the critical need for ethical considerations that extend beyond mere compliance. \\
-    The review investigates the frameworks, methodologies, and best practices that advocate for embedding ethical, fairness, and responsible AI principles into the very fabric of AI systems during their design and construction. By examining a wide array of scholarly contributions, this review seeks to elucidate the key ethical challenges faced by AI developers, the strategies employed to integrate fairness and ethical considerations, and the emergent best practices for cultivating responsible AI. \\
+
+    Ethical, fairness, and responsible AI have emerged as pivotal concerns in the design and construction of artificial intelligence systems. This systematic literature review aims to comprehensively analyze the evolving landscape of ethical and responsible AI practices and principles within the domain of AI system development. Over the past decade, the rapid proliferation of AI technologies has underscored the critical need for ethical considerations that extend beyond mere compliance. 
+    
+    The review investigates the frameworks, methodologies, and best practices that advocate for embedding ethical, fairness, and responsible AI principles into the very fabric of AI systems during their design and construction. By examining a wide array of scholarly contributions, this review seeks to elucidate the key ethical challenges faced by AI developers, the strategies employed to integrate fairness and ethical considerations, and the emergent best practices for cultivating responsible AI. 
+    
     Furthermore, it will explore the impact of ethical and responsible AI design on society, policy, and the broader AI landscape. The findings from this review will provide valuable insights for AI practitioners, researchers, and policymakers, highlighting the importance of ethical and responsible AI as an inherent part of the AI design process.
+
 \end{abstract}
+
 \newpage
 \section{Introduction}
-Artificial Intelligence (AI) has witnessed remarkable advancements and an unprecedented integration into various aspects of our lives over the past decade. As AI systems become more pervasive, the ethical, fairness, and responsible design of these systems has become an increasingly critical concern. The development of AI is no longer solely about technological innovation and performance optimization but also encompasses a profound sense of social responsibility and ethical awareness. \\
-This Systematic Literature Review (SLR) delves into the multifaceted realm of Ethical, Fairness, and Responsible AI by design/construction. The rapid evolution of AI technologies has brought about a shift in the AI paradigm, emphasizing the need for ethical and responsible AI from the outset, during the design and construction phases. It is no longer sufficient to address ethical and fairness considerations as an afterthought or as a post-hoc addition; instead, these principles must be deeply ingrained in the very core of AI systems. \\
-The scope of this SLR is to provide a comprehensive analysis of the existing literature, frameworks, methodologies, and best practices surrounding the integration of ethical and responsible AI principles during the design and construction of AI systems. It explores the challenges faced by AI developers, the strategies employed to incorporate fairness and ethics, and the emergent best practices that advocate for responsible AI development. \\
-Moreover, the impact of ethical and responsible AI design on society, policy, and the broader AI landscape is a key aspect of this review. As AI systems exert profound influence on various domains, including healthcare, finance, education, and beyond, the ethical and responsible use of AI becomes pivotal for ensuring equitable access and decision-making. \\
+
+Artificial Intelligence (AI) has witnessed remarkable advancements and an unprecedented integration into various aspects of our lives over the past decade. As AI systems become more pervasive, the ethical, fairness, and responsible design of these systems has become an increasingly critical concern. The development of AI is no longer solely about technological innovation and performance optimization but also encompasses a profound sense of social responsibility and ethical awareness. 
+
+This Systematic Literature Review (SLR) delves into the multifaceted realm of Ethical, Fairness, and Responsible AI by design/construction. The rapid evolution of AI technologies has brought about a shift in the AI paradigm, emphasizing the need for ethical and responsible AI from the outset, during the design and construction phases. It is no longer sufficient to address ethical and fairness considerations as an afterthought or as a post-hoc addition; instead, these principles must be deeply ingrained in the very core of AI systems.  
+
+The scope of this SLR is to provide a comprehensive analysis of the existing literature, frameworks, methodologies, and best practices surrounding the integration of ethical and responsible AI principles during the design and construction of AI systems. It explores the challenges faced by AI developers, the strategies employed to incorporate fairness and ethics, and the emergent best practices that advocate for responsible AI development.  
+
+Moreover, the impact of ethical and responsible AI design on society, policy, and the broader AI landscape is a key aspect of this review. As AI systems exert profound influence on various domains, including healthcare, finance, education, and beyond, the ethical and responsible use of AI becomes pivotal for ensuring equitable access and decision-making.  
+
 Through the synthesis of a diverse body of scholarly contributions, this SLR aspires to elucidate the evolving landscape of Ethical, Fairness, and Responsible AI by design/construction. By synthesizing the knowledge and insights derived from existing research, this review intends to provide valuable guidance to AI practitioners, researchers, and policymakers. The ultimate goal is to underscore the significance of ethical and responsible AI as an integral part of the AI design process, furthering our collective efforts in creating AI systems that prioritize societal well-being and fairness.
+
 \newpage
 \section{Methodology}
-    \subsection{Search Strategy}
-    \textbf{Database Searches:}
+
+\subsection{Research goal}
+
+The central aim of this study is to systematically explore and identify the varied approaches adopted in the past decade for the development of trustworthy-by-design Artificial Intelligence (AI) solutions. Trustworthy AI is of paramount importance in contemporary technological landscapes, where ethical considerations and societal impacts of AI systems are under intense scrutiny. This research seeks to comprehensively analyze and categorize the methodologies and strategies employed by researchers, engineers, and practitioners in the pursuit of constructing AI systems that inherently prioritize trustworthiness.
+
+The impetus for this research is derived from the escalating significance of AI technologies across diverse domains and the ensuing need for responsible and reliable deployment. Over the last 10 years, rapid advancements in AI have underscored the imperative to embed trustworthiness into AI systems from their inception. By discerning the spectrum of approaches utilized during this period, this research aims to contribute valuable insights into the evolution of methodologies for creating AI solutions that prioritize ethical considerations, transparency, and accountability.
+
+\subsection{Research question}
+
+The research question this study is based on are the following:
+
 \begin{itemize}
+
+    \item \emph{What are the approaches used to make the AI Responsible by design?}
+
+    \item \emph{What are the approaches adopted to consider fairness since the beginning
+    of the design step?}
+
+    \item \emph{What are the approaches to guarantee Transparency-by-Design in AI
+    systems?}
+
+    \item \emph{What are the approaches adopted to guarantee Explainable-by-Design
+    AI?}
+
+    \item \emph{What are the approaches to guarantee Etichs-by-design?}
+
+
+\end{itemize}
+
+\subsection{Search Strategy}
+
+    \textbf{Database Searches:}
+
+\begin{itemize}
+
     \item ACM Digital Library
+
     \item Google Scholar
+
 \end{itemize}
 
 \textbf{Search Strings:}
+
 \begin{enumerate}
+
     \item "AI by design"
+
     \item "Fair-by-design algorithm"
+
     \item "Responsible AI by design"
+
     \item "Fair AI by construction"
+
     \item "Ethical AI by design"
+
 \end{enumerate}
 
 \textbf{Inclusion and Exclusion Criteria:}
+
 \begin{itemize}
+
     \item Publication Period: Last 10 years (from 2013 to 2023).
+
     \item Language: English.
+
     \item Document Types: Scientific articles, conference papers, conference proceedings, and relevant academic documents.
+
     \item Excluded: Duplicate documents and articles not relevant to the research topic.
+
 \end{itemize}
 
 This search strategy is designed to retrieve relevant articles published in the last 10 years that address approaches to guarantee trustworthy AI since the design step.
 
-    \subsection{Study Selection}
-    In this section, is described the process of study selection, which involved the identification and screening of relevant articles. The goal was to select articles that addressed bias mitigation approaches in the context of specific applications.
+\subsection{Study Selection}
 
-    \begin{enumerate}
-        \item \textbf{Total Number of Identified Articles:} 10
-        \item \textbf{Number of Articles Excluded after Initial Screening:} 3
+In this section, is described the process of study selection, which involved the identification and screening of relevant articles. The goal was to select articles that addressed bias mitigation approaches in the context of specific applications.
+
+\begin{enumerate}
+
+    \item \textbf{Total Number of Identified Articles:} 10
+
+    \item \textbf{Number of Articles Excluded after Initial Screening:} 3
+
+    During the initial screening, 3 articles were excluded due to their low relevance with the specific topic of this work.
         
-        During the initial screening, 3 articles were excluded due to their low relevance with the specific topic of this work.
+    \item \textbf{Number of Articles Excluded after Secondary Screening:} 0
         
-        \item \textbf{Number of Articles Excluded after Secondary Screening:} 0
+    \item \textbf{Screening Procedures:}
         
-        \item \textbf{Screening Procedures:}
-        
-        \begin{itemize}
-            \item \textbf{Initial Screening:} The initial screening focused on identifying articles that were closely related to the topic of this work
+    \begin{itemize}
+    
+        \item \textbf{Initial Screening:} The initial screening focused on identifying articles that were closely related to the topic of this work
             
-            \item \textbf{Secondary Screening:} During the secondary screening, the goal was to identify articles with different methodological approach to guarantee a wider view om the topic.
-        \end{itemize}
+    
+        \item \textbf{Secondary Screening:} During the secondary screening, the goal was to identify articles with different methodological approach to guarantee a wider view om the topic.
+    
+    \end{itemize}
         
-        \item \textbf{Exclusion Reasons:}
-        
-        Articles were excluded if the proposed algorithms and approaches were deemed highly context-specific, tailored to the particular application context presented by the algorithm.
+    
+    \item \textbf{Exclusion Reasons:}
+    
+    Articles were excluded if the proposed algorithms and approaches were deemed highly context-specific, tailored to the particular application context presented by the algorithm.
     
     \end{enumerate}
     
     The study selection process ensured that the articles included in the review were relevant to the context of bias mitigation in specific applications, while those heavily dependent on context were excluded.
+    
     \subsection{Data Extraction}
+    
     \begin{itemize}
+    
         \item \textbf{Responsible AI by Design in Practice}
+    
         \begin{itemize}
+    
             \item Title: \textbf{Responsible AI by Design in Practice}
+    
             \item Authors: 
+    
             \begin{itemize}
+    
                 \item Richard Benjamins
+    
                 \item Alberto Barbado
+    
                 \item Daniel Sierra
+    
             \end{itemize}
+    
             \item Year of Publication: 2019
+    
             \item Abstract:
+    
             \begin{abstract}
+    
                 Recently, a lot of attention has been given to undesired con-
                 sequences of Artificial Intelligence (AI), such as unfair bias 
                 leading to discrimination, or the lack of explanations of the 
@@ -115,23 +195,35 @@ This search strategy is designed to retrieve relevant articles published in the 
                 es  of  AI.  We  hope  that  other  organizations  can  learn  from 
                 this  and  that  our  experience  contributes  to  making  the  best 
                 of AI while minimizing its risks.
+           
             \end{abstract}
-        \end{itemize}
         
+        \end{itemize}
         
         \item \textbf{FAIR-BY-DESIGN EXPLAINABLE MODELS FOR PREDICTION OF
         RECIDIVISM}
+        
         \begin{itemize}
+        
             \item Title: \textbf{BFAIR-BY-DESIGN EXPLAINABLE MODELS FOR PREDICTION OF
             RECIDIVISM}
+        
             \item Authors:
+        
             \begin{itemize}
+        
                 \item Eduardo Solares
+        
                 \item Plamen Angelov
+        
             \end{itemize}
+        
             \item Year of Publication: 2019
+        
             \item Abstract:
+        
             \begin{abstract}
+        
                 Recidivism prediction provides decision makers with an assessment of the likelihood that a criminal
                 defendant will reoffend that can be used in pre-trial decision-making. It can also be used for prediction
                 of locations where crimes most occur, profiles that are more likely to commit violent crimes. While
@@ -140,25 +232,41 @@ This search strategy is designed to retrieve relevant articles published in the 
                 approach to predict recidivism. It is prototype-based, learns locally and extracts empirically the data
                 distribution. The results show that the proposed method is able to reduce the bias and provide human
                 interpretable rules to assist specialists in the explanation of the given results.
+        
             \end{abstract}
+        
         \end{itemize}
         
         \item \textbf{XEM: An Explainable-by-Design Ensemble Method
         for Multivariate Time Series Classification}
+        
         \begin{itemize}
+        
             \item Title: \textbf{XEM: An Explainable-by-Design Ensemble Method
             for Multivariate Time Series Classification}
+        
             \item Authors:
+        
             \begin{itemize}
+        
                 \item Kevin Fauvel
+        
                 \item Elisa Fromont
+        
                 \item Veronique Masson
+        
                 \item Philippe Faverdin
+        
                 \item Alexandre Termier
+        
             \end{itemize}
+        
             \item Year of Publication: 2022
+        
             \item Abstract:
+        
             \begin{abstract}
+        
                 We present XEM, an eXplainable-by-design Ensemble method for Mul-
                 tivariate time series classification. XEM relies on a new hybrid ensemble method
                 that combines an explicit boosting-bagging approach to handle the bias-variance
@@ -168,22 +276,37 @@ This search strategy is designed to retrieve relevant articles published in the 
                 on the public UEA datasets. Furthermore, XEM provides faithful explainability-
                 by-design and manifests robust performance when faced with challenges arising
                 from continuous data collection (different MTS length, missing data and noise).
+        
             \end{abstract}
+        
         \end{itemize}
         
         \item \textbf{Towards Transparency by Design for Artificial Intelligence}
+        
         \begin{itemize}
+        
             \item Title: \textbf{Towards Transparency by Design for Artificial Intelligence}
+        
             \item Authors:
+        
             \begin{itemize}
+        
                 \item Heike Felzmann
+        
                 \item Eduard Fosch‑Villaronga
+        
                 \item Christoph Lutz
+        
                 \item Aurelia Tamò‑Larrieux
+        
             \end{itemize}
+        
             \item Year of Publication: 2020
+        
             \item Abstract:
+        
             \begin{abstract}
+        
                 In  this  article,  we  develop  the  concept  of  Transparency  by  Design  that  serves  as  
                 practical guidance in helping promote the beneficial functions of transparency while  
                 mitigating its challenges in automated-decision making (ADM) environments. With 
@@ -202,39 +325,67 @@ This search strategy is designed to retrieve relevant articles published in the 
                 ency  by  Design  is  a  model  that  helps  organizations  design  transparent  AI  systems,  
                 by integrating these principles in a step-by-step manner and as an ex-ante value, not 
                 as an afterthought.
+        
             \end{abstract}
+        
         \end{itemize}
         
         \item \textbf{Fairness in Design: A Framework for Facilitating Ethical Artificial Intelligence Designs}
+        
         \begin{itemize}
+        
             \item Title: \textbf{Fairness in Design: A Framework for Facilitating Ethical Artificial Intelligence Designs}
+        
             \item Authors:
+        
             \begin{itemize}
+        
                 \item Jiehuang Zhang
+        
                 \item Ying Shu
+        
                 \item Han Yu
+        
             \end{itemize}
+        
             \item Year of Publication: 2020
+        
             \item Abstract:
+        
             \begin{abstract}
+        
                 As Artificial Intelligence (AI) and Digital Transformation (DT) technologies become increasingly ubiquitous in modern society, the flaws in their designs are starting to attract attention. AI models have been shown to be susceptible to biases in the training data, especially against underrepresented groups. Although an increasing call for AI solution designers to take fairness into account, the field lacks a design methodology to help AI design teams of members from different backgrounds brainstorm and surface potential fairness issues during the design stage. To address this problem, we propose the Fairness in Design (FID) framework to help AI software designers surface and explore complex fairness-related issues, that otherwise can be overlooked. We explore literature in the field of fairness in AI to narrow down the field into ten major fairness principles, which assist designers in brainstorming around metrics and guide thinking processes about fairness. FID facilitates discussions among design team members, through a game-like approach that is based on a set of prompt cards, to identify and discuss potential concerns from the perspective of various stakeholders. Extensive user studies show that FID is effective at assisting participants in making better decisions about fairness, especially complex issues that involve algorithmic decisions. It has also been found to decrease the barrier of entry for software teams, in terms of the pre-requisite knowledge about fairness, to address fairness issues so that they can make more appropriate related design decisions. The FID methodological framework contributes a novel toolkit to aid in the design and conception process of AI systems, decrease barriers to entry, and assist critical thinking around complex issues surrounding algorithmic systems. The framework is integrated into a step-by-step card game for AI system designers to employ during the design and conception stage of the life-cycle process. FID is a unique decision support framework for software teams interested to create fairness-aware AI solutions.
+        
             \end{abstract}
+        
         \end{itemize}
 
         \item \textbf{A Lightweight, Efficient and Explainable-by-Design
         Convolutional Neural Network for Internet Traffic Classification}
+        
         \begin{itemize}
+        
             \item Title: \textbf{A Lightweight, Efficient and Explainable-by-Design
             Convolutional Neural Network for Internet Traffic Classification}
+        
             \item Authors:
+        
             \begin{itemize}
+        
                 \item Kevin Fauvel
+        
                 \item Fuxing Chen
+        
                 \item Dario Rossi
+        
             \end{itemize}
+        
             \item Year of Publication: 2023
+        
             \item Abstract:
+        
             \begin{abstract}
+        
                 Traffic classification, i.e., the identification of the type of applica-
                 tions flowing in a network, is a strategic task for numerous activities
                 (e.g., intrusion detection, routing). This task faces some critical chal-
@@ -257,65 +408,98 @@ This search strategy is designed to retrieve relevant articles published in the 
                 from the communication of detected application prototypes to the
                 end-user, and we highlight the faithfulness of LEXNet explanations
                 through a comparison with post hoc methods.
+        
             \end{abstract}
+        
         \end{itemize}
 
         \item \textbf{Ethics by design for artificial intelligence}
+        
         \begin{itemize}
+        
             \item Title: \textbf{Ethics by design for artificial intelligence}
+        
             \item Authors:
+        
             \begin{itemize}
+        
                 \item Philip Brey
+        
                 \item Brandt Dainow
+        
             \end{itemize}
+        
             \item Year of Publication: 2023
+        
             \item Abstract:
+        
             \begin{abstract}
+        
                 In this paper, we present an approach for the systematic and comprehensive inclusion of ethical considerations in the design 
                 and development process of artificial intelligence systems, called Ethics by Design for AI (EbD-AI). The approach is the 
                 result of a three-year long research effort, and has recently be adopted by the European Commission as part of its ethics 
                 review procedure for AI projects. We describe and explain the approach and its different components and its application to 
                 the development of AI software and systems. We also compare it to other approaches in AI ethics, and we consider limita-
                 tions of the approach as well as potential criticisms.
+        
             \end{abstract}
+        
         \end{itemize}
+    
     \end{itemize}
     
 
 \newpage
 \section{Results}
-In this section will be summarized the results of the analysis of the papers, with the goal to answer to the question sabout the possible approaches to create trustworty-by-Design mechanisms.
+
+In this section will be summarized the results of the analysis of the papers, with the goal to answer to the questions about the possible approaches to create trustworty-by-Design mechanisms.
 
 \subsection{What are the approaches used to make the AI Responsible by design?}
+
 Telefonica\cite{DBLP:journals/corr/abs-1909-12838}, a Spanish company, has embraced a comprehensive set of principles to guide their approach to responsible AI. These principles include:
 
 \subsubsection{Fair AI}
+
 Telefonica is committed to ensuring that AI applications lead to fair and non-discriminatory results, considering factors like race, ethnicity, religion, gender, sexual orientation, and disability. They emphasize the importance of assessing the impact of AI algorithms on specific domains.
 
 \subsubsection{Transparent and Explainable AI}
+
 Transparency and explainability are critical to Telefonica. They advocate for clear communication about the data used by AI systems and the purposes they serve. Additionally, they stress the need for providing explanations for AI system decisions.
 
 \subsubsection{Human Centric AI}
+
 Telefonica's AI systems are designed to benefit society, staying under human control and guided by value-based considerations. They ensure that AI applications do not negatively impact human rights or the UN's Sustainable Development Goals.
 
 \subsubsection{Privacy and Security by Design}
+
 Privacy and security are integral to AI system design at Telefonica. These principles align with standard privacy and security practices in organizations, ensuring the protection of personal data.
 
 To implement these principles effectively, Telefonica has developed a robust methodology, which includes:
+
 \begin{itemize}
+
     \item \textbf{AI Principles}: Establishing core values and boundaries to guide AI development.
+
     \item \textbf{Questions and Checkpoints}: A set of questions and checkpoints to ensure that all AI principles are considered during the creation process.
+
     \item \textbf{Tools}: Technical tools to help answer questions and mitigate any problems identified during the development process.
+
     \item \textbf{Training}: Both technical and non-technical training to equip the team with the necessary knowledge and skills.
+
     \item \textbf{Governance Model}: Assigning responsibilities and accountabilities within the organization.
 
 \end{itemize}
 
 \subsubsection{Fair AI: Solutions and Challenges}
+
 In the context of Fair AI, various technical tools and solutions have emerged. These include:
+
 \begin{itemize}
+
     \item \textbf{Fairness Flow Tool}: Tools like Facebook's Fairness Flow tool aim to help detect and mitigate bias in AI systems, particularly by identifying bias in data sets related to sensitive information.
+
     \item \textbf{IBM's Fairness 360 Toolkit}: IBM's toolkit provides a set of functionalities to address bias, including detecting bias in data sets, identifying correlations between different variables, detecting unbalanced outcomes, and mitigating bias effects.
+
     \item \textbf{Open Source Tools}: Some of these fairness tools are open-source, such as IBM's offering, tools from Pymetrics, and a tool from the University of Chicago.
 
 \end{itemize}
@@ -323,19 +507,25 @@ In the context of Fair AI, various technical tools and solutions have emerged. T
 However, achieving Fair AI comes with its set of challenges, including the causes of bias, various fairness criteria, and the need for evaluation and mitigation techniques.
 
 \subsubsection{Transparent and Explainable AI (xAI)}
+
 Transparent and Explainable AI is essential, especially when dealing with complex "black box" models. Several technical tools and techniques facilitate explainability, including white box models, black box models, model-agnostic methods, and tools for explaining model workings.
 
 \subsubsection{Privacy and Security by Design}
+
 In the context of Privacy and Security by Design, Telefonica addresses privacy risks and security threats. Technical tools are employed to test the risk of re-identification in anonymized datasets and to secure AI systems against potential attacks.
 
 Telefonica's commitment to responsible AI extends to addressing privacy and security concerns, making sure that AI systems are both privacy-respectful and robust against potential attacks.
 
 \newpage
+
 \subsection{What are the approaches adopted to consider fairness since the beginning of the design step?}
+
 \subsubsection{Methodological framework for AI solutions development}
+
 FID\cite{10091496} is presented as a methodological framework for software development teams working on AI solutions. It is designed to help these teams systematically incorporate fairness considerations into their AI systems. This framework ensures that fairness is a fundamental part of the design process rather than an afterthought.
 
 \begin{itemize}
+
     \item \textbf{Fairness Definitions and Notions}: FID consolidates fairness definitions and notions from the existing literature into ten fundamental fairness principles. These principles are categorized into group fairness and individual fairness. Each of these principles represents a specific aspect of fairness in AI, such as statistical parity, equal opportunity, and more.
     
     \item \textbf{Application Domain Selection}: The FID process starts with the AI design team selecting an application domain. This domain sets the context for the entire session, and it can be a fictional or real-world product or system, depending on the team's needs.
@@ -353,34 +543,47 @@ FID\cite{10091496} is presented as a methodological framework for software devel
     \item \textbf{Iterative Process}: The FID process can be repeated or iterated based on the feedback and evolving needs of the AI design team. This adaptability ensures that fairness considerations remain integrated throughout the AI system's development.
     
     \item \textbf{Suitability and Adaptability}: The text suggests that FID is most suitable for projects in the design stage of AI development. It acknowledges that fairness can be dynamic and context-dependent, and FID can be adapted to different application domains and evolving ethical requirements.
+
 \end{itemize}
 
 In summary, Fairness in Design (FID) is a structured and systematic approach to incorporating fairness into AI systems during the design phase. It ensures that ethical considerations are an integral part of AI development, promoting transparency and accountability in the creation of AI technologies.
 
 \subsubsection{Algorithmic approach in recidivism scenario}
-Fair-by-design is a critical approach when implementing predictive algorithms in the criminal justice\cite{Soares2019FairbydesignEM} system or any other domain where decisions significantly impact individuals' lives. This methodology aims to ensure that algorithms used for risk assessment and decision-making are free from discriminatory biases and provide equitable outcomes for all. \\
-In the criminal justice system, predictive algorithms are employed for various purposes, including pre-trial decision-making, predicting crime hotspots, identifying profiles with a high likelihood of committing violent crimes, and forecasting recidivism. However, it's crucial to acknowledge that the accuracy of these algorithms has profound consequences for the individuals involved, especially in the context of criminal defendants. \\
-One example cited is the Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) risk assessment tool. This tool, developed in 1998, has assessed more than 1 million offenders. Research, such as that conducted by ProPublica, has raised concerns about the tool's fairness and equity. For instance, the likelihood of a non-recidivating black defendant being assessed as high risk was found to be nearly twice that of white defendants. This reveals a significant racial disparity in the tool's predictive accuracy, with higher false positive rates and lower false negative rates for black defendants compared to white defendants.\\
+
+Fair-by-design is a critical approach when implementing predictive algorithms in the criminal justice\cite{Soares2019FairbydesignEM} system or any other domain where decisions significantly impact individuals' lives. This methodology aims to ensure that algorithms used for risk assessment and decision-making are free from discriminatory biases and provide equitable outcomes for all.  
+
+In the criminal justice system, predictive algorithms are employed for various purposes, including pre-trial decision-making, predicting crime hotspots, identifying profiles with a high likelihood of committing violent crimes, and forecasting recidivism. However, it's crucial to acknowledge that the accuracy of these algorithms has profound consequences for the individuals involved, especially in the context of criminal defendants.  
+
+One example cited is the Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) risk assessment tool. This tool, developed in 1998, has assessed more than 1 million offenders. Research, such as that conducted by ProPublica, has raised concerns about the tool's fairness and equity. For instance, the likelihood of a non-recidivating black defendant being assessed as high risk was found to be nearly twice that of white defendants. This reveals a significant racial disparity in the tool's predictive accuracy, with higher false positive rates and lower false negative rates for black defendants compared to white defendants. 
+
 To address these issues, a fair-by-design approach is proposed in this paper. The key elements of this approach include:
 
 \begin{itemize}
-  \item \textbf{Prototype-Based Learning}: The core of the method involves creating locally valid generative models based on prototypes, which are focal points for each class. These models are described by a multimodal Cauchy distribution, and the meta-parameters are initialized with the first observed data sample.
+
+    \item \textbf{Prototype-Based Learning}: The core of the method involves creating locally valid generative models based on prototypes, which are focal points for each class. These models are described by a multimodal Cauchy distribution, and the meta-parameters are initialized with the first observed data sample.
   
-  \item \textbf{Data Density Calculation}: Data density is calculated using a Cauchy function for each data point. This calculation helps in determining the influence area of prototypes in the feature space.
+
+    \item \textbf{Data Density Calculation}: Data density is calculated using a Cauchy function for each data point. This calculation helps in determining the influence area of prototypes in the feature space.
   
-  \item \textbf{Assignment of Data Samples}: New data samples are assigned to the nearest prototype in the feature space. This assignment creates data clouds around each prototype.
+
+    \item \textbf{Assignment of Data Samples}: New data samples are assigned to the nearest prototype in the feature space. This assignment creates data clouds around each prototype.
   
-  \item \textbf{Condition for Adding New Data Clouds}: A condition is checked to determine if a new data cloud should be added. If a data point is out of the influence area of existing prototypes, it becomes a new prototype, and a new data cloud is formed around it.
+
+    \item \textbf{Condition for Adding New Data Clouds}: A condition is checked to determine if a new data cloud should be added. If a data point is out of the influence area of existing prototypes, it becomes a new prototype, and a new data cloud is formed around it.
+
+
+    \item \textbf{Interpretability}: The approach's interpretability is highlighted as it operates based on prototype-based, local generative models. It can be expressed as a set of linguistic IF...THEN rules, making it understandable to human users.
   
-  \item \textbf{Interpretability}: The approach's interpretability is highlighted as it operates based on prototype-based, local generative models. It can be expressed as a set of linguistic IF...THEN rules, making it understandable to human users.
-  
-  \item \textbf{Learning Procedure}: The learning algorithm is summarized, detailing how new data samples are processed, prototypes are updated, and new data clouds are formed based on the condition mentioned.
+
+    \item \textbf{Learning Procedure}: The learning algorithm is summarized, detailing how new data samples are processed, prototypes are updated, and new data clouds are formed based on the condition mentioned.
+
 \end{itemize}
 
 This approach offers a method to create predictive models that are fair by design, ensuring that algorithms used in criminal justice and other domains are free from discrimination and bias. It provides a systematic way to improve predictive accuracy and equity, which is crucial in high-stakes decision-making processes. The next section of the paper likely presents experiments and results using this fair-by-design approach, followed by a conclusion.
 
 \newpage
 \subsection{What are the approaches to guarantee Transparency-by-Design in AI systems?}
+
 Transparency is a multifaceted concept with varying interpretations across different disciplines.\cite{articletbd} It encompasses notions of explainability, interpretability, openness, accessibility, and visibility, among others. The concept of transparency is of paramount importance in fields such as economics, politics, and law, where it is considered a prerequisite for optimal market functioning, political participation, and administrative legality, respectively. Despite the consensus that transparency is valuable, its precise definition, its intended audience, and its scope of benefits often remain ambiguous.
 
 The approach to transparency by design is grounded in the belief that understanding transparency purely as an information transfer process falls short of its deeper, value-laden embeddedness within individual agency, relational dynamics, and systemic practices. To this end, it's important to differentiate between three fundamental perspectives on transparency, each highlighting the normative and social aspects of transparency practices: Transparency as a virtue, a relation, and a system.
@@ -404,6 +607,7 @@ Now, let's delve into the stages of transparency by design for Artificial Intell
 In this initial phase, the focus is on providing stakeholders with detailed information about what data is processed, how it is processed, and the associated risks. The ultimate goal is to achieve explainability of the AI system and its risks for stakeholders.
 
 \begin{itemize}
+
     \item \textbf{Explainability}: This involves ensuring that algorithmic decisions and the data driving those decisions can be explained to end-users and other stakeholders in non-technical terms. This includes information about the general functioning of the system, the specific use of data, and individual decisions made by the system.
     
     \item \textbf{Data Processing}: Transparently explaining what data is used by the system and how it is used. This should cover the various stages of data processing and the extent of human discretion and intervention within the system.
@@ -413,6 +617,7 @@ In this initial phase, the focus is on providing stakeholders with detailed info
     \item \textbf{Decision-Making Standards}: Detailed explanations about the decision-making criteria and their justifiability, including normative implications. The link between data sources and inferences needs to be critically reflected on.
     
     \item \textbf{Risk Disclosure}: Transparency also extends to explaining the risks associated with AI system operations and the measures taken to mitigate these risks. It should go beyond privacy risks to include issues related to bias, discrimination, and other potential negative consequences.
+
 \end{itemize}
 
 \subsubsection{Phase 2: Organizational and Stakeholder-Oriented Transparency Management}
@@ -420,45 +625,65 @@ In this initial phase, the focus is on providing stakeholders with detailed info
 This final phase is concerned with the organizational and societal response to transparency requirements and expectations. Organizational accountability and adaptability are key in this stage.
 
 \begin{itemize}
+
     \item \textbf{Inspectability}: The system should enable third-party audits to understand and review its behavior, allowing for retrospective transparency.
     
     \item \textbf{Responsiveness}: The organization must be open to queries and scrutiny from stakeholders, making it easy for them to initiate transparency communications. Responsiveness is not limited to individual cases but should also address the concerns of the general public.
     
     \item \textbf{Reporting}: To promote transparency, regular reports should be published, offering information about system usage, accuracy, and any benchmarking data where relevant. The format and frequency of these reports can vary based on the audience's needs.
+
 \end{itemize}
 
 By following this comprehensive methodology, AI systems can embed transparency by design into their development and deployment processes. This approach ensures that transparency is not merely a one-time endeavor but an ongoing practice that aligns with the varying needs of different stakeholders and maintains a strong focus on ethical and accountable AI. Transparency by design becomes a means to promote trust, mitigate risks, and enhance AI's societal impact.
 
 \newpage
+
 \subsection{What are the approaches adopted to guarantee Explainable-by-Design AI?}
+
 \subsection{Ensamble Algorithm} \cite{DBLP:journals/corr/abs-2005-03645}
+
 In this approach, it is considered an ensemble algorithm called LCE (Local Cascade Ensemble) and its application in creating an explainable-by-design AI model called XEM (eXplainable-by-design Ensemble Method) for Multivariate Time Series (MTS) classification.
 
 \subsubsection{LCE (Local Cascade Ensemble):}
 
 \begin{itemize}
+
     \item LCE is an improved hybrid ensemble method that combines explicit and implicit techniques.
+
     \item It builds on a cascade generalization approach and uses a decision tree as the primary method.
+
     \item LCE aims to balance bias and variance in the classification process.
+
     \item It can capture new relationships within MTS data that cannot be discovered globally.
+
 \end{itemize}
 
 \subsubsection{XEM (eXplainable-by-design Ensemble Method):}
 
 \begin{itemize}
+
     \item XEM leverages LCE to identify the discriminative part of MTS and create an explainable AI model for MTS classification.
+
     \item It uses tabular classifiers for the sub-sequences of MTS and combines both performance and explainability.
+
     \item XEM allows for the dynamic determination of the time window size based on the classification task.
+
     \item It provides explainability by indicating which part of the MTS was decisive in making a particular classification.
+
 \end{itemize}
 
 \subsubsection{Key Properties:}
 
 \begin{itemize}
+
     \item XEM offers phase invariance, meaning it's not sensitive to the position of the discriminative subsequence.
+
     \item It leverages interactions among dimensions for improved classification.
+
     \item XEM can handle MTS of different lengths and manages missing data effectively.
+
     \item The ensemble approach provides noise robustness, and it's scalable.
+
 \end{itemize}
 
 \subsubsection{Implementation:}
@@ -466,7 +691,9 @@ In this approach, it is considered an ensemble algorithm called LCE (Local Casca
 The authors provide a pseudocode for implementing XEM and share their Python implementation.
 
 Overall, LCE and XEM offer a promising approach to MTS classification, combining performance with explainability and addressing various challenges associated with time series data.
+
 \subsection{Neural Network approach for internet traffic classification} \cite{10.1145/3580305.3599762}
+
 \subsubsection{Introduction to LEXNet:}
 
 LEXNet, short for "Lightweight, Efficient, and eXplainable-by-design Convolutional Neural Network for Internet Traffic Classification," represents a groundbreaking convolutional neural network (CNN) meticulously tailored for the realm of internet traffic classification. This innovative model excels in the precise categorization of encrypted internet traffic flows into distinct application classes. It distinguishes itself by being not only accurate but also lightweight, computationally efficient, and exceptionally transparent in its decision-making process.
@@ -484,7 +711,9 @@ LEXNet offers a solution by offering a fresh perspective. It is introduced as a 
 LEXNet integrates several crucial components that work seamlessly to provide transparent and effective traffic classification:
 
 \begin{itemize}
+
     \item \textbf{Lightweight and Efficient Residual Block (LERes):} LEXNet features a newly devised residual block that efficiently trims the number of parameters and computational demands. Unlike conventional residual blocks, this innovative design maintains an equal channel width, which significantly reduces memory access costs while preserving the accuracy of ResNet.
+
     \item \textbf{Lightweight Prototype Layer (LProto):} Instead of the traditional prototype block found in the ProtoPNet, LEXNet introduces a lightweight prototype layer. This modification streamlines the network by employing fewer convolutional layers with reduced prototype depths. Notably, it permits a variable number of prototypes per class, enhancing the model's ability to represent the diverse characteristics of each class.
 
 \end{itemize}
@@ -494,98 +723,168 @@ LEXNet integrates several crucial components that work seamlessly to provide tra
 One of LEXNet's distinguishing features is its commitment to "explainable-by-design" decision-making, ensuring transparency in classification processes. LEXNet accomplishes this through several essential mechanisms:
 
 \begin{itemize}
+
     \item \textbf{Prototype-Based Explainability:} LEXNet adopts a prototype-based methodology that leverages class-specific prototypes. These prototypes serve as distinctive patterns or features associated with each class, providing valuable anchors for classification.
+
     \item \textbf{Similarity Scores:} During classification, LEXNet calculates similarity scores between the input data and the learned prototypes. These scores indicate the likeness of the input data to each class-specific prototype.
+
     \item \textbf{Activation Maps and Heatmaps:} LEXNet generates activation maps, which retain the spatial relationships of the original convolutional output. These maps play a crucial role in preserving contextual information.
+
     \item \textbf{Interpretable Heatmaps:} Activation maps are further processed and upsampled to match the size of the input data, resulting in heatmaps. These heatmaps are instrumental for explaining classification decisions and visually highlighting the input data regions that significantly influenced the model's choice.
+
     \item \textbf{Visual Explanations:} The heatmaps serve as visual explanations of the model's decisions. Network administrators, analysts, or cybersecurity experts can leverage these visualizations to understand why the model categorized specific traffic flows in particular ways. Examining the heatmap reveals the specific features, regions, or patterns in the input data that contributed most significantly to the classification outcome.
+
     \item \textbf{Variable Prototypes per Class:} LEXNet's adaptability allows it to learn varying numbers of prototypes for each class, catering to the unique characteristics and complexities of individual classes.
+
 \end{itemize}
 
 \subsubsection{In summary} 
+
 LEXNet fundamentally transforms the landscape of traffic classification. It excels in delivering accuracy, efficiency, and transparency through its "explainable-by-design" approach. Its unique design elements, including the LERes blocks and LProto layer, equip it to overcome the challenges of traffic classification while ensuring that its classification decisions are not only accurate but also comprehensible. This level of transparency is paramount, especially in the domains of network management and cybersecurity, where a profound understanding of why specific traffic flows are categorized as they are holds critical importance for security analysis, performance optimization, and informed decision-making. LEXNet is at the forefront of high-performance classification models that prioritize clarity and transparency.
 
 \newpage
+
 \subsection{What are the approaches to guarantee Etichs-by-design?}
-The EbD-AI approach to AI ethics emphasizes the belief that technology \cite{articleebd} is not neutral and that design choices can embed values into the process. It recognizes that design choices are not morally neutral and can have ethical consequences. While the consequences of technology can depend on its usage and context, design plays a significant role in shaping outcomes. For instance, an app designed to collect personal information without consent violates privacy regardless of its use. \\
-The approach is rooted in the idea that values can be integrated into the design process, as seen in concepts like Privacy by Design and Secure by Design. It aims to incorporate ethical values in AI system development. While this doesn't guarantee that values will always be realized, it increases the likelihood that they are. \\
-Engineers may not possess the skills for ethical analysis and deliberation, so EbD-AI provides a framework of tasks for them to follow. It moves ethical concerns to the same level as other system concerns and emphasizes routine ethical issues in design. Special ethical issues may require a reflective approach, and the involvement of an ethicist in projects can help identify and address such issues. \\
-EbD-AI focuses on instantiating core moral values necessary for ethical standards in AI design, such as privacy and fairness. The exact meaning of these values can vary by application and organization. EbD-AI translates ethical requirements into specific tasks, functions, constraints, and more. \\
-The approach follows five steps: Assessment to evaluate the system's objectives against foundational moral values, Instantiation to translate moral values into design requirements, Mapping to map high-level ethical design requirements into specific procedures and actions, Application to determine where and how each ethical requirement will be handled in an organization's methodology, and Implementation to implement Ethics by Design protocols during development. \\
-This approach helps ensure that ethical considerations are integrated throughout the development process, recognizing that the specifics of how this is done can vary depending on the organization and application. The EbD-AI approach is intended to facilitate the ethical integration of AI within different methodologies and organizations. \\
+
+The EbD-AI approach to AI ethics emphasizes the belief that technology \cite{articleebd} is not neutral and that design choices can embed values into the process. It recognizes that design choices are not morally neutral and can have ethical consequences. While the consequences of technology can depend on its usage and context, design plays a significant role in shaping outcomes. For instance, an app designed to collect personal information without consent violates privacy regardless of its use.  
+
+The approach is rooted in the idea that values can be integrated into the design process, as seen in concepts like Privacy by Design and Secure by Design. It aims to incorporate ethical values in AI system development. While this doesn't guarantee that values will always be realized, it increases the likelihood that they are.  
+
+Engineers may not possess the skills for ethical analysis and deliberation, so EbD-AI provides a framework of tasks for them to follow. It moves ethical concerns to the same level as other system concerns and emphasizes routine ethical issues in design. Special ethical issues may require a reflective approach, and the involvement of an ethicist in projects can help identify and address such issues.  
+
+EbD-AI focuses on instantiating core moral values necessary for ethical standards in AI design, such as privacy and fairness. The exact meaning of these values can vary by application and organization. EbD-AI translates ethical requirements into specific tasks, functions, constraints, and more.  
+
+The approach follows five steps: Assessment to evaluate the system's objectives against foundational moral values, Instantiation to translate moral values into design requirements, Mapping to map high-level ethical design requirements into specific procedures and actions, Application to determine where and how each ethical requirement will be handled in an organization's methodology, and Implementation to implement Ethics by Design protocols during development.  
+
+This approach helps ensure that ethical considerations are integrated throughout the development process, recognizing that the specifics of how this is done can vary depending on the organization and application. The EbD-AI approach is intended to facilitate the ethical integration of AI within different methodologies and organizations.  
+
 Here are presented the core moral values relevant to AI, forming an "ethical framework" guiding AI system design. These values align with global consensus and include:
+
 \begin{itemize}
-  \item \textbf{Human Agency:} Embraces freedom, autonomy, and dignity as human rights. Design must respect individuals' right to make their decisions and prevent any restrictions on basic human freedoms.
-  \item \textbf{Privacy and Data Governance:} Affirms privacy rights and the importance of data governance. Design must respect data subjects' rights and demonstrate lawful, fair, and transparent data processing.
-  \item \textbf{Fairness:} Ensures equal rights and opportunities, avoiding discrimination and supporting diversity and inclusion. Design must prevent algorithmic bias and promote accessibility.
-  \item \textbf{Individual, Social, and Environmental Well-being:} AI systems should contribute to individual, societal, and environmental well-being while avoiding harm. Safety, sustainability, and avoiding negative social impacts are essential.
-  \item \textbf{Transparency:} Requires clarity in AI system purpose, operations, and decisions. Users should know they are interacting with AI, understand system capabilities, and have the ability to audit and challenge decisions.
-  \item \textbf{Accountability and Oversight:} Encourages accountability and human oversight, ensuring that AI actors take responsibility for system operation and consequences. Oversight should be maintained post-deployment, allowing for risk assessment and auditing.
+
+    \item \textbf{Human Agency:} Embraces freedom, autonomy, and dignity as human rights. Design must respect individuals' right to make their decisions and prevent any restrictions on basic human freedoms.
+
+    \item \textbf{Privacy and Data Governance:} Affirms privacy rights and the importance of data governance. Design must respect data subjects' rights and demonstrate lawful, fair, and transparent data processing.
+
+    \item \textbf{Fairness:} Ensures equal rights and opportunities, avoiding discrimination and supporting diversity and inclusion. Design must prevent algorithmic bias and promote accessibility.
+
+    \item \textbf{Individual, Social, and Environmental Well-being:} AI systems should contribute to individual, societal, and environmental well-being while avoiding harm. Safety, sustainability, and avoiding negative social impacts are essential.
+
+    \item \textbf{Transparency:} Requires clarity in AI system purpose, operations, and decisions. Users should know they are interacting with AI, understand system capabilities, and have the ability to audit and challenge decisions.
+
+    \item \textbf{Accountability and Oversight:} Encourages accountability and human oversight, ensuring that AI actors take responsibility for system operation and consequences. Oversight should be maintained post-deployment, allowing for risk assessment and auditing.
+
 \end{itemize}
-Each of these design requirements further translates into specific procedures and actions during various stages of the design process. These are discussed in the following section. \\
+
+Each of these design requirements further translates into specific procedures and actions during various stages of the design process. These are discussed in the following section.  
+
 Ethics by Design introduces a model for the development of AI systems that incorporates ethical considerations throughout the entire process. This model is designed to be adaptable to various development methodologies and encompasses six generic phases, which are not rigidly sequential but are flexible classes of operations that can be mixed, rearranged, and adjusted to suit the development process for an AI system.
 
 \subsubsection{Specification of Objectives}
+
 In this phase:
+
 \begin{itemize}
+
     \item The top-level purpose and desired capabilities of the system are outlined.
+
     \item These objectives are evaluated against six generic moral values and ethical standards, considering their alignment and potential legal mandates.
+
     \item Ethical issues that may arise during development, based on specific procedures or tools, are also taken into account.
+
     \item The impact of the system on stakeholders is emphasized, making the involvement of external stakeholders a critical ethical requirement from the outset.
+
 \end{itemize}
 
 \subsubsection{Specification of Requirements}
+
 During this phase:
+
 \begin{itemize}
+
     \item Both technical and non-technical requirements for the system are determined, including those necessary for ethical compliance.
+
     \item The goal is to produce a development plan, including design specifications, task deadlines, and an assessment of the necessary resources.
+
     \item New tools and resources that support the Ethics by Design for AI approach may be required, necessitating changes in internal processes.
+
     \item An ethical risk assessment and an implementation plan are developed to ensure the incorporation of the Ethics by Design approach.
+
 \end{itemize}
 
 \subsubsection{High-Level Design}
+
 In this phase:
+
 \begin{itemize}
+
     \item The high-level architecture of the system is designed, often preceded by the development of a conceptual model.
+
     \item Both technical and non-technical requirements, including ethical requirements related to transparency, autonomy, privacy, and fairness, are integrated into the design.
+
     \item Ethical requirements are treated as equal to other technical requirements, emphasizing their importance in the design process.
+
 \end{itemize}
 
 \subsubsection{Data Collection and Preparation}
+
 During this phase:
+
 \begin{itemize}
+
     \item Data is collected and integrated, a critical step as incomplete or biased datasets can lead to unethical AI systems.
+
     \item Measures are taken to address potential biases and ensure data quality.
+
     \item Data cleaning and preparation are critical, as these steps can introduce new ethical problems.
+
     \item Compliance with data protection regulations like GDPR is essential, especially if the system processes personal data.
+
 \end{itemize}
 
 \subsubsection{Design and Development}
+
 In this phase:
+
 \begin{itemize}
+
     \item The actual construction of the system takes place, instantiating ethical requirements through development processes.
+
     \item Specific actions to incorporate ethical requirements are integrated with other development tasks.
+
     \item Documentation and human oversight of data handling processes are essential for transparency, traceability, and accountability.
+
     \item Ethical governance and documentation systems are designed to make ethical issues identifiable and their resolution traceable.
+
 \end{itemize}
 
 \subsubsection{Testing and Evaluation}
+
 During this phase:
+
 \begin{itemize}
+
     \item The system's compliance with original objectives, including ethical requirements, is verified.
+
     \item An ethical examination is conducted to ensure that the system aligns with its ethical requirements.
+
     \item Real-world use is assessed, involving a cross-section of potential stakeholders.
+
     \item Stakeholder involvement is crucial, as ethical problems can often involve unequal treatment of certain user groups.
+
 \end{itemize}
 
 The integration of the Ethics by Design for AI approach into any design methodology involves mapping the tasks from the generic model into the chosen methodology. Ethical requirements relevant to each stage are identified, and checklists of ethical requirements are created for each element of the methodology. The goal is to include ethics as a standard part of the AI development process, ensuring ethical compliance is monitored and enforced throughout the entire development lifecycle. It is also emphasized that cultural adjustments are necessary to instill ethical considerations throughout the development organization.
 
 \newpage
 \section{Conclusion}
-n this systematic literature review (SLR), it has explored a wide range of approaches aimed at addressing the crucial issue of "trustworthy-by-design" in the field of Artificial Intelligence (AI). This analysis encompassed various methodologies and tools employed in both the broader context of software development and within the realm of algorithmic and mathematical techniques. \\
+
+In this systematic literature review (SLR), it has explored a wide range of approaches aimed at addressing the crucial issue of "trustworthy-by-design" in the field of Artificial Intelligence (AI). This analysis encompassed various methodologies and tools employed in both the broader context of software development and within the realm of algorithmic and mathematical techniques.  
+
 Through this investigation, several key insights and conclusions have emerged:
 
 \begin{enumerate}
+    
     \item \textbf{Diversity of Approaches:} It has been observed a notable diversity in the strategies and methodologies used to instill trustworthiness in AI systems. Researchers have explored approaches ranging from traditional software engineering principles to sophisticated algorithmic and mathematical techniques. This diversity highlights the multifaceted nature of the challenge.
 
     \item \textbf{Interdisciplinary Collaboration:} The research landscape underscores the importance of interdisciplinary collaboration. Combining insights from software engineering, mathematics, and AI can yield novel solutions to enhance trustworthiness in AI systems. Successful initiatives often involve experts from various fields working together.
